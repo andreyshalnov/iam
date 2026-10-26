@@ -5,113 +5,115 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Андрей Шальнов — Product &amp; Engineering Director · Электроника: 0→1 до серии</title>
 <meta name="description" content="Андрей Шальнов — руководитель продукта и разработки в электронике. 25+ лет: Honeywell, Bosch, ABB, ГК «Рубеж». Запуск изделий 0→1 до серийного производства, сертификация ТР ТС/ГОСТ, OEM/ODM в Китае.">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23122A44'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23D9B84A' text-anchor='middle'%3E%D0%90%D0%A8%3C/text%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%234A7AA8'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' fill='%23FFFFFF' text-anchor='middle'%3E%D0%90%D0%A8%3C/text%3E%3C/svg%3E">
 <style>
   :root{
-    --navy:#122A44; --navy-2:#0B1D31; --ink:#22303E; --muted:#5B6B7B;
-    --line:#E3E9EF; --bg-soft:#F6F8FA; --accent:#2E6DA4; --gold:#B9922F; --gold-soft:#D9B84A;
-    --serif: Georgia, "Times New Roman", "PT Serif", serif;
-    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --blue:#4A7AA8; --blue-deep:#2C4A6B; --blue-ink:#004B7A; --blue-soft:#538CD6; --blue-link:#436590;
+    --orange:#FF9900; --orange-soft:#FFC77E;
+    --ink:#1A1A1A; --muted:#666666; --line:#D8DEE4; --tint:#F4F6F8;
+    --sans: Arial, "Helvetica Neue", Helvetica, "PT Sans", sans-serif;
   }
   *{margin:0;padding:0;box-sizing:border-box}
   html{scroll-behavior:smooth}
-  body{font-family:var(--sans);color:var(--ink);background:#fff;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
-  section{padding:64px 0}
-  h2.sec{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--navy);letter-spacing:.2px}
-  .sec-label{font-size:12px;letter-spacing:2.4px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px}
-  .sec-head{margin-bottom:34px}
-  .sec-rule{width:56px;height:3px;background:var(--gold);border:0;margin:18px 0 0}
-  a{color:var(--accent);text-decoration:none}
+  body{font-family:var(--sans);color:#2B2B2B;font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased;
+    background:#4A7AA8;background-image:linear-gradient(180deg,#A6C1DA 0%,#6E97BF 45%,#4A7AA8 100%);background-attachment:fixed}
+  .wrap{max-width:1000px;margin:0 auto;padding:0 46px}
+  section{padding:56px 0}
+  h2.sec{font-size:26px;font-weight:bold;color:#111;letter-spacing:.2px}
+  .sec-label{font-size:12px;letter-spacing:2.6px;text-transform:uppercase;color:var(--blue-soft);font-weight:bold;margin-bottom:10px}
+  .sec-head{margin-bottom:32px}
+  .sec-rule{width:56px;height:2px;background:#1A1A1A;border:0;margin:16px 0 0}
+  a{color:var(--blue-link);text-decoration:none}
   a:hover{text-decoration:underline}
 
-  /* top bar */
-  .topbar{position:sticky;top:0;z-index:50;background:rgba(11,29,49,.97);border-bottom:1px solid rgba(255,255,255,.08)}
-  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
-  .brand{color:#fff;font-family:var(--serif);font-size:17px;letter-spacing:.4px}
-  .brand span{color:var(--gold-soft)}
-  .nav{display:flex;gap:26px}
-  .nav a{color:#B9C6D4;font-size:13.5px;letter-spacing:.6px}
-  .nav a:hover{color:#fff;text-decoration:none}
+  /* top bar — тёмная полоса вкладок, как в шаблоне Travel */
+  .topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:2px solid #1A1A1A}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:54px}
+  .brand{color:#111;font-size:16px;font-weight:bold;letter-spacing:.4px}
+  .brand span{color:#8A8A8A}
+  .nav{display:flex;gap:24px}
+  .nav a{color:#1A1A1A;font-size:13px;letter-spacing:.6px;font-weight:bold}
+  .nav a:hover{color:#004B7A;text-decoration:none}
+
+  /* белый «лист» поверх синего фона — фирменный приём блога */
+  .sheet{max-width:1000px;margin:34px auto 0;background:#fff;border-top:4px solid #1A1A1A;border-radius:8px 8px 0 0;box-shadow:0 12px 38px rgba(0,22,44,.35)}
 
   /* hero */
-  .hero{background:linear-gradient(160deg,var(--navy-2) 0%,var(--navy) 62%,#1B3A5C 100%);color:#fff;padding:88px 0 76px;border-top:4px solid var(--gold)}
-  .hero .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-soft);font-weight:700;margin-bottom:18px}
-  .hero h1{font-family:var(--serif);font-size:52px;line-height:1.12;font-weight:700;margin-bottom:20px}
-  .hero .lead{font-size:19px;line-height:1.55;color:#D5DEE8;max-width:760px;margin-bottom:16px}
-  .hero .lead b{color:#fff;font-weight:600}
-  .hero .geo{font-size:14.5px;color:#8FA3B8;margin-bottom:34px}
-  .cta{display:flex;flex-wrap:wrap;gap:12px}
-  .btn{display:inline-block;padding:11px 22px;border:1px solid rgba(255,255,255,.35);border-radius:3px;color:#fff;font-size:14.5px;letter-spacing:.4px;transition:all .18s ease;background:transparent}
-  .btn:hover{background:#fff;color:var(--navy);text-decoration:none;border-color:#fff}
-  .btn.gold{background:var(--gold);border-color:var(--gold);color:#fff;font-weight:600}
-  .btn.gold:hover{background:var(--gold-soft);border-color:var(--gold-soft);color:var(--navy-2)}
+  .hero{padding:54px 0 42px;border-bottom:1px solid var(--line)}
+  .hero .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);font-weight:bold;margin-bottom:16px}
+  .hero h1{font-size:46px;line-height:1.1;font-weight:bold;color:#111;margin-bottom:16px}
+  .hero .lead{font-size:18.5px;line-height:1.55;color:#333;max-width:760px;margin-bottom:14px}
+  .hero .lead b{color:#111}
+  .hero .geo{font-size:14px;color:#7A8CA0;margin-bottom:30px}
+  .cta{display:flex;flex-wrap:wrap;gap:10px}
+  .btn{display:inline-block;padding:10px 20px;border:1px solid #9AA5AE;border-radius:3px;color:#1A1A1A;font-size:14px;letter-spacing:.3px;background:#fff;transition:all .18s ease}
+  .btn:hover{background:#004B7A;border-color:#004B7A;color:#fff;text-decoration:none}
+  .btn.gold{background:#1A1A1A;border-color:#1A1A1A;color:#fff;font-weight:bold}
+  .btn.gold:hover{background:#004B7A;border-color:#004B7A}
 
   /* metrics */
-  .metrics{background:#fff;border-bottom:1px solid var(--line)}
+  .metrics{background:var(--tint);border-bottom:1px solid var(--line)}
   .metrics .grid{display:grid;grid-template-columns:repeat(6,1fr)}
-  .metric{padding:30px 14px;text-align:center;border-left:1px solid var(--line)}
+  .metric{padding:26px 12px;text-align:center;border-left:1px solid var(--line)}
   .metric:first-child{border-left:none}
-  .metric .num{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--navy)}
-  .metric .num em{font-style:normal;color:var(--gold)}
-  .metric .lbl{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.35}
+  .metric .num{font-size:28px;font-weight:bold;color:#111}
+  .metric .num em{font-style:normal;color:var(--blue)}
+  .metric .lbl{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.35}
 
   /* about */
-  .about p{font-size:16.5px;line-height:1.75;color:#33424F;max-width:860px;margin-bottom:18px}
-  .about p b{color:var(--navy)}
-  .about .principle{border-left:3px solid var(--gold);padding:14px 22px;background:var(--bg-soft);font-family:var(--serif);font-size:17.5px;color:var(--navy);max-width:860px;border-radius:0 3px 3px 0}
+  .about p{font-size:16px;line-height:1.75;color:#3B4754;max-width:860px;margin-bottom:17px}
+  .about p b{color:#111}
+  .about .principle{border-left:3px solid #1A1A1A;padding:14px 22px;background:var(--tint);font-size:17px;color:#111;max-width:860px;border-radius:0 3px 3px 0}
 
   /* timeline */
-  .exp{background:var(--bg-soft)}
+  .exp{background:var(--tint)}
   .tl{list-style:none;max-width:880px}
-  .tl li{position:relative;padding:0 0 34px 34px;border-left:2px solid #C9D5E0}
+  .tl li{position:relative;padding:0 0 32px 32px;border-left:2px solid #C2D2E2}
   .tl li:last-child{padding-bottom:4px}
-  .tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid #fff;box-shadow:0 0 0 2px #C9D5E0}
-  .tl .period{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);font-weight:700}
-  .tl h3{font-family:var(--serif);font-size:19.5px;color:var(--navy);margin:4px 0 1px}
-  .tl .role{font-size:14.5px;color:var(--muted);margin-bottom:9px}
-  .tl .desc{font-size:15.3px;line-height:1.65;color:#33424F}
-  .tl .desc b{color:var(--navy);font-weight:600}
+  .tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--blue);border:2px solid #fff;box-shadow:0 0 0 2px #C2D2E2}
+  .tl .period{font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue-soft);font-weight:bold}
+  .tl h3{font-size:19px;color:#111;margin:4px 0 1px;font-weight:bold}
+  .tl .role{font-size:14px;color:var(--muted);margin-bottom:8px}
+  .tl .desc{font-size:15px;line-height:1.65;color:#3B4754}
+  .tl .desc b{color:#111}
 
   /* cases */
-  .cases{background:#fff}
-  .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-  .case{border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:3px;padding:26px 28px;background:#fff;transition:box-shadow .18s ease}
-  .case:hover{box-shadow:0 8px 26px rgba(18,42,68,.10)}
-  .case .tag{display:inline-block;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
-  .case h3{font-family:var(--serif);font-size:19px;color:var(--navy);margin-bottom:8px}
-  .case p{font-size:14.8px;color:#44545F;line-height:1.62}
-  .case p b{color:var(--navy)}
+  .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .case{border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:3px;padding:24px 26px;background:#fff;transition:box-shadow .18s ease}
+  .case:hover{box-shadow:0 8px 24px rgba(74,122,168,.22)}
+  .case .tag{display:inline-block;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue-link);font-weight:bold;margin-bottom:9px}
+  .case h3{font-size:18.5px;color:#111;margin-bottom:7px;font-weight:bold}
+  .case p{font-size:14.5px;color:#4A5560;line-height:1.62}
+  .case p b{color:#111}
 
   /* competencies */
-  .comp{background:var(--bg-soft)}
-  .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
-  .comp-card{background:#fff;border:1px solid var(--line);border-radius:3px;padding:24px 26px}
-  .comp-card h3{font-size:14px;letter-spacing:1.4px;text-transform:uppercase;color:var(--navy);font-weight:700;padding-bottom:10px;border-bottom:2px solid var(--gold);margin-bottom:14px}
+  .comp{background:var(--tint)}
+  .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .comp-card{background:#fff;border:1px solid var(--line);border-radius:3px;padding:22px 24px}
+  .comp-card h3{font-size:13.5px;letter-spacing:1.4px;text-transform:uppercase;color:#111;font-weight:bold;padding-bottom:9px;border-bottom:2px solid #1A1A1A;margin-bottom:13px}
   .comp-card ul{list-style:none}
-  .comp-card li{font-size:14.6px;color:#44545F;padding:4px 0 4px 18px;position:relative}
-  .comp-card li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+  .comp-card li{font-size:14.3px;color:#4A5560;padding:4px 0 4px 18px;position:relative}
+  .comp-card li::before{content:"—";position:absolute;left:0;color:var(--blue)}
 
   /* education */
-  .edu{background:#fff}
-  .edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
-  .edu-card{border-left:3px solid var(--navy);padding:4px 0 4px 20px}
-  .edu-card .y{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);font-weight:700}
-  .edu-card h3{font-family:var(--serif);font-size:17.5px;color:var(--navy);margin:3px 0 3px}
-  .edu-card p{font-size:14.4px;color:var(--muted)}
+  .edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
+  .edu-card{border-left:3px solid var(--blue);padding:4px 0 4px 20px}
+  .edu-card .y{font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue-soft);font-weight:bold}
+  .edu-card h3{font-size:17px;color:#111;margin:3px 0 3px;font-weight:bold}
+  .edu-card p{font-size:14.2px;color:var(--muted)}
 
   /* contacts */
-  .contacts{background:linear-gradient(160deg,var(--navy-2),var(--navy) 70%,#1B3A5C);color:#fff;border-top:4px solid var(--gold)}
-  .contacts .sec-label{color:var(--gold-soft)}
+  .contacts{background:linear-gradient(160deg,#5687B4 0%,#4A7AA8 55%,#3E6C98 100%);color:#fff}
+  .contacts .sec-label{color:#C7D6E5}
   .contacts h2.sec{color:#fff}
-  .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
-  .contact-card{display:block;border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:20px 22px;color:#fff;transition:all .18s ease;background:rgba(255,255,255,.04)}
-  .contact-card:hover{background:rgba(255,255,255,.10);text-decoration:none}
-  .contact-card .t{font-size:11.5px;letter-spacing:1.8px;text-transform:uppercase;color:#9FB2C5;margin-bottom:7px}
-  .contact-card .v{font-size:15.5px;font-weight:600;word-break:break-all}
-  .contacts .geo-note{margin-top:26px;font-size:14.5px;color:#9FB2C5}
+  .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+  .contact-card{display:block;border:1px solid rgba(255,255,255,.35);border-radius:3px;padding:18px 20px;color:#fff;transition:all .18s ease;background:rgba(255,255,255,.07)}
+  .contact-card:hover{background:rgba(255,255,255,.16);text-decoration:none}
+  .contact-card .t{font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:#C7D6E5;margin-bottom:6px}
+  .contact-card .v{font-size:15px;font-weight:bold;word-break:break-all}
+  .contacts .geo-note{margin-top:24px;font-size:14px;color:#D7E3EF}
 
-  footer{background:var(--navy-2);color:#7A8CA0;font-size:13px;padding:22px 0}
+  footer{background:#1A1A1A;color:#9A9A9A;font-size:13px;padding:20px 0;border-top:1px solid rgba(0,0,0,.25)}
   footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
 
   @media(max-width:920px){
@@ -120,27 +122,32 @@
     .metric{border-top:1px solid var(--line)}
     .metric:nth-child(-n+3){border-top:none}
     .comp-grid{grid-template-columns:repeat(2,1fr)}
-    .hero h1{font-size:40px}
+    .hero h1{font-size:36px}
     .nav{display:none}
+    .wrap{padding:0 28px}
   }
   @media(max-width:640px){
-    section{padding:46px 0}
-    .hero{padding:60px 0 52px}
-    .hero h1{font-size:33px}
+    section{padding:40px 0}
+    .hero{padding:38px 0 32px}
+    .hero h1{font-size:30px}
     .metrics .grid{grid-template-columns:repeat(2,1fr)}
     .metric:nth-child(odd){border-left:none}
     .metric:nth-child(-n+4){border-top:1px solid var(--line)}
     .metric:nth-child(-n+2){border-top:none}
     .case-grid,.comp-grid,.edu-grid{grid-template-columns:1fr}
     .contact-grid{grid-template-columns:1fr}
-    .tl li{padding-left:24px}
+    .tl li{padding-left:22px}
+    .sheet{margin:14px 10px 0}
+    .wrap{padding:0 20px}
   }
   @media print{
     .topbar,.cta{display:none}
-    .hero{background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
-    section{padding:28px 0}
+    body{background:#fff;background-image:none}
+    .sheet{box-shadow:none;margin:0;max-width:none;border-top:none}
+    section{padding:22px 0}
     .case:hover{box-shadow:none}
-    body{font-size:12.5px}
+    body{font-size:12px}
+    .contacts{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   }
 </style>
 </head>
@@ -159,15 +166,16 @@
   </div>
 </div>
 
+<div class="sheet">
 <header class="hero">
   <div class="wrap">
     <div class="eyebrow">Product &amp; Engineering Director</div>
     <h1>Андрей Шальнов</h1>
     <p class="lead">Вывожу электронные изделия <b>от первого эскиза до серийного производства</b> — 25+ лет в электронике, рядом с железом: схемотехника, платы, встроенное ПО, сертификация, цех. <b>Honeywell, Bosch, ABB, ГК «Рубеж».</b></p>
-    <p class="geo">Москва · готов к работе в коридоре Москва–Ярославль · командировки РФ и за рубеж</p>
+    <p class="geo">Москва · командировки по РФ и за рубеж</p>
     <div class="cta">
-      <a class="btn gold" href="mailto:andrey.shalnov@ya.ru">andrey.shalnov@ya.ru</a>
-      <a class="btn" href="tel:+79652883903">+7 (965) 288-39-03</a>
+      <a class="btn gold" href="mailto:andrey.shalnov@gmail.com">andrey.shalnov@gmail.com</a>
+      <a class="btn" href="tel:+79165948682">+7 (916) 594-86-82</a>
       <a class="btn" href="https://github.com/andreyshalnov" target="_blank" rel="noopener">GitHub</a>
       <a class="btn" href="https://www.linkedin.com/in/andrey-shalnov/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
@@ -210,7 +218,7 @@
     <ul class="tl">
       <li>
         <div class="period">Декабрь 2022 — настоящее время</div>
-        <h3>ГК «Рубеж» (ООО «Технолайт»), Чувашия</h3>
+        <h3>ГК «Рубеж» (ООО «Технолайт»), Москва</h3>
         <div class="role">Директор по развитию собственных продуктовых направлений</div>
         <div class="desc">Портфель из <b>8 собственных линеек</b> (2 300+ SKU, оборот свыше <b>1 млрд ₽ в год</b>). С нуля выведены в серию 4 линейки — SIP-домофония и СКУД, сетевые коммутаторы, электронные замки, СКС: все в топе группы по валовой прибыли. Полный цикл: ТЗ → OEM/ODM (Китай, Россия) → КД → сертификация → серия → QA/QC. Канал private-label построен с нуля — <b>50% продаж</b> линейки к 2026 году.</div>
       </li>
@@ -246,13 +254,13 @@
       </li>
       <li>
         <div class="period">2001 — 2004</div>
-        <h3>АСПТ «Спецавтоматика», Владимир</h3>
+        <h3>АСПТ «Спецавтоматика», Москва</h3>
         <div class="role">Заместитель начальника НИОКР</div>
         <div class="desc">Линейка оборудования пожарной автоматики: до <b>нового прибора в месяц</b> на пике — схемотехника, трассировка плат, SMD-монтаж, предсерийное производство, отладка ПО, ЕСКД, выход на серию. Оборудование работает на объектах федерального уровня: <b>Московский Кремль, Лефортово, Центральный банк РФ, Сбербанк</b>.</div>
       </li>
       <li>
         <div class="period">1999 — 2000</div>
-        <h3>Концерн «Алмаз-Антей», НИОКР радиолокации</h3>
+        <h3>Концерн «Алмаз-Антей» (Муром), НИОКР радиолокации</h3>
         <div class="role">Инженер-электроник</div>
         <div class="desc">ПО для радиолокационных систем (C++, Assembler). Рабочий прототип цифрового фильтра сжатия импульсов на ПЛИС Altera — прошёл госиспытания; проект лёг в основу диплома.</div>
       </li>
@@ -392,17 +400,18 @@
     <div class="sec-head">
       <div class="sec-label">Связаться</div>
       <h2 class="sec">Контакты</h2>
-      <hr class="sec-rule" style="background:var(--gold-soft)">
+      <hr class="sec-rule" style="background:#FFFFFF">
     </div>
     <div class="contact-grid">
-      <a class="contact-card" href="mailto:andrey.shalnov@ya.ru"><div class="t">Почта</div><div class="v">andrey.shalnov@ya.ru</div></a>
-      <a class="contact-card" href="tel:+79652883903"><div class="t">Телефон</div><div class="v">+7 (965) 288-39-03</div></a>
+      <a class="contact-card" href="mailto:andrey.shalnov@gmail.com"><div class="t">Почта</div><div class="v">andrey.shalnov@gmail.com</div></a>
+      <a class="contact-card" href="tel:+79165948682"><div class="t">Телефон</div><div class="v">+7 (916) 594-86-82</div></a>
       <a class="contact-card" href="https://www.linkedin.com/in/andrey-shalnov/" target="_blank" rel="noopener"><div class="t">LinkedIn</div><div class="v">in/andrey-shalnov</div></a>
       <a class="contact-card" href="https://github.com/andreyshalnov" target="_blank" rel="noopener"><div class="t">GitHub</div><div class="v">github.com/andreyshalnov</div></a>
     </div>
-    <p class="geo-note">Москва · готов к работе в коридоре Москва–Ярославль · командировки по РФ и за рубеж · английский — рабочий уровень (переговоры и аудиты заводов в КНР)</p>
+    <p class="geo-note">Москва · командировки по РФ и за рубеж · английский — рабочий уровень (переговоры и аудиты заводов в КНР)</p>
   </div>
 </section>
+</div>
 
 <footer>
   <div class="wrap">
@@ -418,8 +427,8 @@
   "name": "Андрей Шальнов",
   "alternateName": "Andrey Shalnov",
   "jobTitle": "Product & Engineering Director",
-  "email": "mailto:andrey.shalnov@ya.ru",
-  "telephone": "+7 965 288 39 03",
+  "email": "mailto:andrey.shalnov@gmail.com",
+  "telephone": "+7 916 594 86 82",
   "url": "https://andreyshalnov.github.io/iam/",
   "sameAs": ["https://github.com/andreyshalnov", "https://www.linkedin.com/in/andrey-shalnov/"],
   "address": {"@type": "PostalAddress", "addressLocality": "Москва", "addressCountry": "RU"},
