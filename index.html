@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Андрей Шальнов — Product &amp; Engineering Director · Электроника: 0→1 до серии</title>
+<meta name="description" content="Андрей Шальнов — руководитель продукта и разработки в электронике. 25+ лет: Honeywell, Bosch, ABB, ГК «Рубеж». Запуск изделий 0→1 до серийного производства, сертификация ТР ТС/ГОСТ, OEM/ODM в Китае.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%23122A44'/%3E%3Ctext x='32' y='42' font-family='Georgia,serif' font-size='28' fill='%23D9B84A' text-anchor='middle'%3E%D0%90%D0%A8%3C/text%3E%3C/svg%3E">
+<style>
+  :root{
+    --navy:#122A44; --navy-2:#0B1D31; --ink:#22303E; --muted:#5B6B7B;
+    --line:#E3E9EF; --bg-soft:#F6F8FA; --accent:#2E6DA4; --gold:#B9922F; --gold-soft:#D9B84A;
+    --serif: Georgia, "Times New Roman", "PT Serif", serif;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:var(--sans);color:var(--ink);background:#fff;font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+  .wrap{max-width:1060px;margin:0 auto;padding:0 24px}
+  section{padding:64px 0}
+  h2.sec{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--navy);letter-spacing:.2px}
+  .sec-label{font-size:12px;letter-spacing:2.4px;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:10px}
+  .sec-head{margin-bottom:34px}
+  .sec-rule{width:56px;height:3px;background:var(--gold);border:0;margin:18px 0 0}
+  a{color:var(--accent);text-decoration:none}
+  a:hover{text-decoration:underline}
+
+  /* top bar */
+  .topbar{position:sticky;top:0;z-index:50;background:rgba(11,29,49,.97);border-bottom:1px solid rgba(255,255,255,.08)}
+  .topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:56px}
+  .brand{color:#fff;font-family:var(--serif);font-size:17px;letter-spacing:.4px}
+  .brand span{color:var(--gold-soft)}
+  .nav{display:flex;gap:26px}
+  .nav a{color:#B9C6D4;font-size:13.5px;letter-spacing:.6px}
+  .nav a:hover{color:#fff;text-decoration:none}
+
+  /* hero */
+  .hero{background:linear-gradient(160deg,var(--navy-2) 0%,var(--navy) 62%,#1B3A5C 100%);color:#fff;padding:88px 0 76px;border-top:4px solid var(--gold)}
+  .hero .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--gold-soft);font-weight:700;margin-bottom:18px}
+  .hero h1{font-family:var(--serif);font-size:52px;line-height:1.12;font-weight:700;margin-bottom:20px}
+  .hero .lead{font-size:19px;line-height:1.55;color:#D5DEE8;max-width:760px;margin-bottom:16px}
+  .hero .lead b{color:#fff;font-weight:600}
+  .hero .geo{font-size:14.5px;color:#8FA3B8;margin-bottom:34px}
+  .cta{display:flex;flex-wrap:wrap;gap:12px}
+  .btn{display:inline-block;padding:11px 22px;border:1px solid rgba(255,255,255,.35);border-radius:3px;color:#fff;font-size:14.5px;letter-spacing:.4px;transition:all .18s ease;background:transparent}
+  .btn:hover{background:#fff;color:var(--navy);text-decoration:none;border-color:#fff}
+  .btn.gold{background:var(--gold);border-color:var(--gold);color:#fff;font-weight:600}
+  .btn.gold:hover{background:var(--gold-soft);border-color:var(--gold-soft);color:var(--navy-2)}
+
+  /* metrics */
+  .metrics{background:#fff;border-bottom:1px solid var(--line)}
+  .metrics .grid{display:grid;grid-template-columns:repeat(6,1fr)}
+  .metric{padding:30px 14px;text-align:center;border-left:1px solid var(--line)}
+  .metric:first-child{border-left:none}
+  .metric .num{font-family:var(--serif);font-size:30px;font-weight:700;color:var(--navy)}
+  .metric .num em{font-style:normal;color:var(--gold)}
+  .metric .lbl{font-size:12.5px;color:var(--muted);margin-top:6px;line-height:1.35}
+
+  /* about */
+  .about p{font-size:16.5px;line-height:1.75;color:#33424F;max-width:860px;margin-bottom:18px}
+  .about p b{color:var(--navy)}
+  .about .principle{border-left:3px solid var(--gold);padding:14px 22px;background:var(--bg-soft);font-family:var(--serif);font-size:17.5px;color:var(--navy);max-width:860px;border-radius:0 3px 3px 0}
+
+  /* timeline */
+  .exp{background:var(--bg-soft)}
+  .tl{list-style:none;max-width:880px}
+  .tl li{position:relative;padding:0 0 34px 34px;border-left:2px solid #C9D5E0}
+  .tl li:last-child{padding-bottom:4px}
+  .tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--gold);border:2px solid #fff;box-shadow:0 0 0 2px #C9D5E0}
+  .tl .period{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);font-weight:700}
+  .tl h3{font-family:var(--serif);font-size:19.5px;color:var(--navy);margin:4px 0 1px}
+  .tl .role{font-size:14.5px;color:var(--muted);margin-bottom:9px}
+  .tl .desc{font-size:15.3px;line-height:1.65;color:#33424F}
+  .tl .desc b{color:var(--navy);font-weight:600}
+
+  /* cases */
+  .cases{background:#fff}
+  .case-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .case{border:1px solid var(--line);border-top:3px solid var(--gold);border-radius:3px;padding:26px 28px;background:#fff;transition:box-shadow .18s ease}
+  .case:hover{box-shadow:0 8px 26px rgba(18,42,68,.10)}
+  .case .tag{display:inline-block;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--accent);font-weight:700;margin-bottom:10px}
+  .case h3{font-family:var(--serif);font-size:19px;color:var(--navy);margin-bottom:8px}
+  .case p{font-size:14.8px;color:#44545F;line-height:1.62}
+  .case p b{color:var(--navy)}
+
+  /* competencies */
+  .comp{background:var(--bg-soft)}
+  .comp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+  .comp-card{background:#fff;border:1px solid var(--line);border-radius:3px;padding:24px 26px}
+  .comp-card h3{font-size:14px;letter-spacing:1.4px;text-transform:uppercase;color:var(--navy);font-weight:700;padding-bottom:10px;border-bottom:2px solid var(--gold);margin-bottom:14px}
+  .comp-card ul{list-style:none}
+  .comp-card li{font-size:14.6px;color:#44545F;padding:4px 0 4px 18px;position:relative}
+  .comp-card li::before{content:"—";position:absolute;left:0;color:var(--gold)}
+
+  /* education */
+  .edu{background:#fff}
+  .edu-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px}
+  .edu-card{border-left:3px solid var(--navy);padding:4px 0 4px 20px}
+  .edu-card .y{font-size:13px;letter-spacing:1.2px;text-transform:uppercase;color:var(--accent);font-weight:700}
+  .edu-card h3{font-family:var(--serif);font-size:17.5px;color:var(--navy);margin:3px 0 3px}
+  .edu-card p{font-size:14.4px;color:var(--muted)}
+
+  /* contacts */
+  .contacts{background:linear-gradient(160deg,var(--navy-2),var(--navy) 70%,#1B3A5C);color:#fff;border-top:4px solid var(--gold)}
+  .contacts .sec-label{color:var(--gold-soft)}
+  .contacts h2.sec{color:#fff}
+  .contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:8px}
+  .contact-card{display:block;border:1px solid rgba(255,255,255,.22);border-radius:3px;padding:20px 22px;color:#fff;transition:all .18s ease;background:rgba(255,255,255,.04)}
+  .contact-card:hover{background:rgba(255,255,255,.10);text-decoration:none}
+  .contact-card .t{font-size:11.5px;letter-spacing:1.8px;text-transform:uppercase;color:#9FB2C5;margin-bottom:7px}
+  .contact-card .v{font-size:15.5px;font-weight:600;word-break:break-all}
+  .contacts .geo-note{margin-top:26px;font-size:14.5px;color:#9FB2C5}
+
+  footer{background:var(--navy-2);color:#7A8CA0;font-size:13px;padding:22px 0}
+  footer .wrap{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}
+
+  @media(max-width:920px){
+    .metrics .grid{grid-template-columns:repeat(3,1fr)}
+    .metric:nth-child(4){border-left:none}
+    .metric{border-top:1px solid var(--line)}
+    .metric:nth-child(-n+3){border-top:none}
+    .comp-grid{grid-template-columns:repeat(2,1fr)}
+    .hero h1{font-size:40px}
+    .nav{display:none}
+  }
+  @media(max-width:640px){
+    section{padding:46px 0}
+    .hero{padding:60px 0 52px}
+    .hero h1{font-size:33px}
+    .metrics .grid{grid-template-columns:repeat(2,1fr)}
+    .metric:nth-child(odd){border-left:none}
+    .metric:nth-child(-n+4){border-top:1px solid var(--line)}
+    .metric:nth-child(-n+2){border-top:none}
+    .case-grid,.comp-grid,.edu-grid{grid-template-columns:1fr}
+    .contact-grid{grid-template-columns:1fr}
+    .tl li{padding-left:24px}
+  }
+  @media print{
+    .topbar,.cta{display:none}
+    .hero{background:var(--navy)!important;-webkit-print-color-adjust:exact;print-color-adjust:exact}
+    section{padding:28px 0}
+    .case:hover{box-shadow:none}
+    body{font-size:12.5px}
+  }
+</style>
+</head>
+<body>
+
+<div class="topbar">
+  <div class="wrap">
+    <div class="brand">Андрей Шальнов<span> · AS</span></div>
+    <nav class="nav">
+      <a href="#about">Профиль</a>
+      <a href="#exp">Опыт</a>
+      <a href="#cases">Проекты</a>
+      <a href="#skills">Компетенции</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow">Product &amp; Engineering Director</div>
+    <h1>Андрей Шальнов</h1>
+    <p class="lead">Вывожу электронные изделия <b>от первого эскиза до серийного производства</b> — 25+ лет в электронике, рядом с железом: схемотехника, платы, встроенное ПО, сертификация, цех. <b>Honeywell, Bosch, ABB, ГК «Рубеж».</b></p>
+    <p class="geo">Москва · готов к работе в коридоре Москва–Ярославль · командировки РФ и за рубеж</p>
+    <div class="cta">
+      <a class="btn gold" href="mailto:andrey.shalnov@ya.ru">andrey.shalnov@ya.ru</a>
+      <a class="btn" href="tel:+79652883903">+7 (965) 288-39-03</a>
+      <a class="btn" href="https://github.com/andreyshalnov" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/andrey-shalnov/" target="_blank" rel="noopener">LinkedIn</a>
+    </div>
+  </div>
+</header>
+
+<div class="metrics">
+  <div class="wrap">
+    <div class="grid">
+      <div class="metric"><div class="num">25<em>+</em></div><div class="lbl">лет в электронике</div></div>
+      <div class="metric"><div class="num">8</div><div class="lbl">продуктовых направлений под управлением</div></div>
+      <div class="metric"><div class="num">2 300<em>+</em></div><div class="lbl">SKU в собственном портфеле</div></div>
+      <div class="metric"><div class="num">4</div><div class="lbl">линейки выведены 0→серия с 2022 года</div></div>
+      <div class="metric"><div class="num">2 000<em>+</em></div><div class="lbl">обученных и сертифицированных специалистов</div></div>
+      <div class="metric"><div class="num">30<em>+</em></div><div class="lbl">аудитов OEM/ODM-заводов в Китае</div></div>
+    </div>
+  </div>
+</div>
+
+<section class="about" id="about">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Профиль</div>
+      <h2 class="sec">Специализация — запуск</h2>
+      <hr class="sec-rule">
+    </div>
+    <p><b>Полный цикл изделия:</b> бизнес-кейс → техническое задание → опытные образцы → сертификация (ТР&nbsp;ТС&nbsp;/&nbsp;ГОСТ) → установочная серия → серийный выпуск → QA/QC. Веду команды через гейт-процессы с настоящим правом «стоп» — до того, как сгорит бюджет, а не после.</p>
+    <p><b>Производственная база:</b> собственное серийное производство в России и OEM/ODM-партнёрства в Китае — 30+ аудитов заводов, прямые контракты, контроль качества на площадке. Экономика продукта для меня часть инженерии: себестоимость, ценообразование, маржа и unit-экономика считаются вместе с техническими решениями, а не после них.</p>
+    <p class="principle">«Нанимаю людей, которые сильнее меня в их области, даю мандат и подстраховку, выращиваю через грейды и наставничество. И держу одну неудобную привычку — регулярно сверять, что создаваемая ценность превышает мою стоимость».</p>
+  </div>
+</section>
+
+<section class="exp" id="exp">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Опыт</div>
+      <h2 class="sec">25 лет в индустрии</h2>
+      <hr class="sec-rule">
+    </div>
+    <ul class="tl">
+      <li>
+        <div class="period">Декабрь 2022 — настоящее время</div>
+        <h3>ГК «Рубеж» (ООО «Технолайт»), Чувашия</h3>
+        <div class="role">Директор по развитию собственных продуктовых направлений</div>
+        <div class="desc">Портфель из <b>8 собственных линеек</b> (2 300+ SKU, оборот свыше <b>1 млрд ₽ в год</b>). С нуля выведены в серию 4 линейки — SIP-домофония и СКУД, сетевые коммутаторы, электронные замки, СКС: все в топе группы по валовой прибыли. Полный цикл: ТЗ → OEM/ODM (Китай, Россия) → КД → сертификация → серия → QA/QC. Канал private-label построен с нуля — <b>50% продаж</b> линейки к 2026 году.</div>
+      </li>
+      <li>
+        <div class="period">2011 — 2022</div>
+        <h3>ABB, Москва</h3>
+        <div class="role">Руководитель бизнес-юнита «Системы безопасности зданий»</div>
+        <div class="desc">Построил направление в России <b>с нуля и управлял им 11 лет</b> — крупнейшая команда экспертизы и продаж систем безопасности в ABB Россия (смежный оборот <b>500–900 млн ₽/год</b>). Совместные разработки с R&amp;D-центрами ABB в Германии и Китае; локализация продуктов и ПО. Отвечал за ценообразование, себестоимость и маржу юнита; бизнес-кейсы флагманских проектов (ЗИЛАРТ и др.). Обучил и сертифицировал <b>2 000+ интеграторов</b>.</div>
+      </li>
+      <li>
+        <div class="period">2009 — 2011</div>
+        <h3>Присско, Москва</h3>
+        <div class="role">Руководитель направления интеграционных платформ</div>
+        <div class="desc">Ведущий инженер <b>крупнейшего проекта систем безопасности Bosch в Восточной Европе</b>: башня «Федерация» (Банк ВТБ) — сдан в срок. Спроектировал архитектуру PSIM (Bosch BIS) с интеграцией 100% подсистем, работал с R&amp;D Bosch во Франкфурте. Рост продаж интеграционных платформ — <b>×10</b>.</div>
+      </li>
+      <li>
+        <div class="period">2008 — 2009</div>
+        <h3>Bosch, Москва</h3>
+        <div class="role">Менеджер продукта, подразделение систем безопасности</div>
+        <div class="desc">Управление портфелем систем безопасности Bosch в России: локализация, ценообразование, техническая экспертиза, обучение партнёров. После реструктуризации 2009 года вернулся к проектной роли — технический эксперт крупнейшего проекта Bosch в регионе.</div>
+      </li>
+      <li>
+        <div class="period">2005 — 2008</div>
+        <h3>Honeywell, Москва</h3>
+        <div class="role">Руководитель проектов / руководитель группы</div>
+        <div class="desc">Вырос от инженера до руководителя участка за год; управлял международными специалистами (Турция, Индия). <b>Первый в России «умный» жилой дом</b> (ЖК «Коперник») — все слаботочные разделы. Пуск CCTV с распознаванием лиц и номеров, СКУД, пожарной автоматики на Pilkington, Rehau, Silver City. <b>Награда Honeywell Superstars (2006)</b>.</div>
+      </li>
+      <li>
+        <div class="period">2004 — 2005</div>
+        <h3>Аларм Телеком, Москва</h3>
+        <div class="role">Инженер систем безопасности</div>
+        <div class="desc">Проектирование и пусконаладка систем безопасности. Ключевой объект — <b>МХАТ им. А. П. Чехова</b>.</div>
+      </li>
+      <li>
+        <div class="period">2001 — 2004</div>
+        <h3>АСПТ «Спецавтоматика», Владимир</h3>
+        <div class="role">Заместитель начальника НИОКР</div>
+        <div class="desc">Линейка оборудования пожарной автоматики: до <b>нового прибора в месяц</b> на пике — схемотехника, трассировка плат, SMD-монтаж, предсерийное производство, отладка ПО, ЕСКД, выход на серию. Оборудование работает на объектах федерального уровня: <b>Московский Кремль, Лефортово, Центральный банк РФ, Сбербанк</b>.</div>
+      </li>
+      <li>
+        <div class="period">1999 — 2000</div>
+        <h3>Концерн «Алмаз-Антей», НИОКР радиолокации</h3>
+        <div class="role">Инженер-электроник</div>
+        <div class="desc">ПО для радиолокационных систем (C++, Assembler). Рабочий прототип цифрового фильтра сжатия импульсов на ПЛИС Altera — прошёл госиспытания; проект лёг в основу диплома.</div>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<section class="cases" id="cases">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Избранные проекты</div>
+      <h2 class="sec">Изделие / роль / результат</h2>
+      <hr class="sec-rule">
+    </div>
+    <div class="case-grid">
+      <div class="case">
+        <div class="tag">0 → серия · 2022–2024</div>
+        <h3>SIP-домофония и СКУД «SpaceCam»</h3>
+        <p>Линейка выведена с нуля до серийного производства: <b>120 SKU</b> — от бизнес-кейса и ТЗ до OEM-производства в Китае, сертификации ТР ТС и постановки на серию. Одна из топ-линеек ГК «Рубеж» по валовой прибыли.</p>
+      </div>
+      <div class="case">
+        <div class="tag">0 → серия · 2023–2024</div>
+        <h3>Электронные замки «R-lock»</h3>
+        <p><b>64 SKU</b>: механика + электроника + встроенное ПО, собственная КД, OEM/ODM-аудиты и приёмка на площадке производителя, выход в серию и private-label канал — 50% продаж линейки.</p>
+      </div>
+      <div class="case">
+        <div class="tag">Business build · 11 лет</div>
+        <h3>Направление СБ зданий, ABB Россия</h3>
+        <p>Создано с нуля, крупнейшая команда экспертизы и продаж систем безопасности ABB в России: <b>500–900 млн ₽/год</b> смежного оборота, совместные разработки с R&amp;D Германии и Китая, 2 000+ сертифицированных интеграторов.</p>
+      </div>
+      <div class="case">
+        <div class="tag">Флагманский объект · в срок</div>
+        <h3>Башня «Федерация», Банк ВТБ</h3>
+        <p>Крупнейший проект систем безопасности Bosch в Восточной Европе: полный цикл от требований до сдачи — <b>в срок</b>. Архитектура PSIM на Bosch BIS с интеграцией 100% подсистем, локализация ПО с R&amp;D Bosch во Франкфурте.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="comp" id="skills">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Компетенции</div>
+      <h2 class="sec">Что делаю руками и головой</h2>
+      <hr class="sec-rule">
+    </div>
+    <div class="comp-grid">
+      <div class="comp-card">
+        <h3>Продукт и запуск</h3>
+        <ul>
+          <li>NPI 0→1: от бизнес-кейса до серии</li>
+          <li>Гейт-процессы и право «стоп»</li>
+          <li>ТЗ, техническая документация</li>
+          <li>Продуктовые дорожные карты</li>
+        </ul>
+      </div>
+      <div class="comp-card">
+        <h3>Инженерия</h3>
+        <ul>
+          <li>Электроника: схемотехника, платы</li>
+          <li>Встроенное ПО, IoT-связность</li>
+          <li>ЕСКД и конструкторская документация</li>
+          <li>СБ: пожарная автоматика, СКУД, CCTV</li>
+        </ul>
+      </div>
+      <div class="comp-card">
+        <h3>Производство и цепочка</h3>
+        <ul>
+          <li>Серийное производство, QA/QC</li>
+          <li>OEM/ODM в Китае, 30+ аудитов</li>
+          <li>Прямые контракты с заводами</li>
+          <li>Постановка на производство</li>
+        </ul>
+      </div>
+      <div class="comp-card">
+        <h3>Сертификация</h3>
+        <ul>
+          <li>ТР ТС, ГОСТ, пожарные нормы</li>
+          <li>Испытания и приёмка</li>
+          <li>Федеральные объекты: допуск и режим</li>
+        </ul>
+      </div>
+      <div class="comp-card">
+        <h3>Экономика продукта</h3>
+        <ul>
+          <li>Себестоимость и cost engineering</li>
+          <li>Ценообразование и маржа</li>
+          <li>Unit-экономика линейки</li>
+        </ul>
+      </div>
+      <div class="comp-card">
+        <h3>Команда</h3>
+        <ul>
+          <li>Найм и грейдирование инженеров</li>
+          <li>Наставничество, развитие людей</li>
+          <li>Кросс-функциональные команды до 35 чел.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="edu" id="edu">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Образование · Сертификации · Награды</div>
+      <h2 class="sec">Формальная база</h2>
+      <hr class="sec-rule">
+    </div>
+    <div class="edu-grid">
+      <div class="edu-card">
+        <div class="y">2000</div>
+        <h3>Владимирский государственный университет</h3>
+        <p>Инженер — радиотехника / системотехника</p>
+      </div>
+      <div class="edu-card">
+        <div class="y">2006</div>
+        <h3>Honeywell Superstars Award</h3>
+        <p>Корпоративная награда за выдающиеся результаты</p>
+      </div>
+      <div class="edu-card">
+        <div class="y">2010</div>
+        <h3>Bosch Academy, Франкфурт-на-Майне</h3>
+        <p>Building Integration System — архитектура и интеграция</p>
+      </div>
+      <div class="edu-card">
+        <div class="y">2023</div>
+        <h3>«Основы ИИ для бизнеса» · Content AI</h3>
+        <p>Product Strategy &amp; Vision — продуктовая стратегия</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts" id="contacts">
+  <div class="wrap">
+    <div class="sec-head">
+      <div class="sec-label">Связаться</div>
+      <h2 class="sec">Контакты</h2>
+      <hr class="sec-rule" style="background:var(--gold-soft)">
+    </div>
+    <div class="contact-grid">
+      <a class="contact-card" href="mailto:andrey.shalnov@ya.ru"><div class="t">Почта</div><div class="v">andrey.shalnov@ya.ru</div></a>
+      <a class="contact-card" href="tel:+79652883903"><div class="t">Телефон</div><div class="v">+7 (965) 288-39-03</div></a>
+      <a class="contact-card" href="https://www.linkedin.com/in/andrey-shalnov/" target="_blank" rel="noopener"><div class="t">LinkedIn</div><div class="v">in/andrey-shalnov</div></a>
+      <a class="contact-card" href="https://github.com/andreyshalnov" target="_blank" rel="noopener"><div class="t">GitHub</div><div class="v">github.com/andreyshalnov</div></a>
+    </div>
+    <p class="geo-note">Москва · готов к работе в коридоре Москва–Ярославль · командировки по РФ и за рубеж · английский — рабочий уровень (переговоры и аудиты заводов в КНР)</p>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>© 2026 Андрей Шальнов</div>
+    <div>Электроника: 0→1 до серийного производства</div>
+  </div>
+</footer>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Андрей Шальнов",
+  "alternateName": "Andrey Shalnov",
+  "jobTitle": "Product & Engineering Director",
+  "email": "mailto:andrey.shalnov@ya.ru",
+  "telephone": "+7 965 288 39 03",
+  "url": "https://andreyshalnov.github.io/iam/",
+  "sameAs": ["https://github.com/andreyshalnov", "https://www.linkedin.com/in/andrey-shalnov/"],
+  "address": {"@type": "PostalAddress", "addressLocality": "Москва", "addressCountry": "RU"},
+  "alumniOf": ["Владимирский государственный университет", "Honeywell", "Bosch", "ABB"],
+  "knowsLanguage": ["ru", "en"],
+  "description": "Руководитель продукта и разработки в электронике. 25+ лет: запуск изделий 0→1 до серийного производства, сертификация ТР ТС/ГОСТ, OEM/ODM в Китае."
+}
+</script>
+</body>
+</html>
