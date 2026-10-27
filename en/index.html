@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Aandrey Shalnov — Product &amp; Engineering Director · Electronics: 0→1 to Series Production</title>
-<meta name="description" content="Aandrey Shalnov — product and engineering leader in electronics. 25+ years: Honeywell, Bosch, ABB, Rubezh Group. Product launches 0→1 to series production, TR CU/GOST certification, OEM/ODM in China.">
+<title>China Sourcing & Product Launches — Engineering-Grade | Aandrey Shalnov</title>
+<meta name="description" content="Engineering-grade sourcing from China: price audits with 15–30% savings (pay-for-results), factory inspections from $300, 0→series product launches. 25 years: Honeywell, Bosch, ABB, Rubezh Group. 30+ factory audits.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%234A7AA8'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' fill='%23FFFFFF' text-anchor='middle'%3E%D0%90%D0%A8%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://andreyshalnov.github.io/iam/en/">
 <link rel="alternate" hreflang="ru" href="https://andreyshalnov.github.io/iam/">
 <link rel="alternate" hreflang="en" href="https://andreyshalnov.github.io/iam/en/">
+<link rel="alternate" hreflang="zh-CN" href="https://andreyshalnov.github.io/iam/cn/">
 <link rel="alternate" hreflang="x-default" href="https://andreyshalnov.github.io/iam/">
 <style>
   :root{
@@ -41,7 +43,7 @@
   .nav a{color:#1A1A1A;font-size:13px;letter-spacing:.6px;font-weight:bold}
   .nav a:hover{color:#004B7A;text-decoration:none}
 
-  /* белый «лист» поверх неба — фирменный приём блога */
+  /* белый «лист» поверх синего фона — фирменный приём блога */
   .sheet{max-width:1000px;margin:34px auto 0;background:#fff;box-shadow:0 12px 38px rgba(0,22,44,.35);position:relative}
   /* зубчатый верхний край «листа» — как в блоге abb-des.blogspot.com
      (полоса 4px из темы Travel, пробелы между зубцами прозрачны — видно небо) */
@@ -161,35 +163,58 @@
     body{font-size:12px}
     .contacts{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   }
+
+  /* language switcher */
+  .lang{display:flex;gap:12px;align-items:center;font-size:12.5px;font-weight:bold;letter-spacing:.5px;flex-shrink:0}
+  .lang a{color:#1A1A1A;text-decoration:none}
+  .lang a:hover{color:#004B7A;text-decoration:underline}
+  .lang .cur{color:#8A8A8A}
+  /* packages */
+  .pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .pkg{border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:3px;padding:24px 26px;background:#fff;display:flex;flex-direction:column}
+  .pkg .tag{display:inline-block;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue-link);font-weight:bold;margin-bottom:9px}
+  .pkg h3{font-size:18px;color:#111;margin:0 0 8px;font-weight:bold}
+  .pkg p{font-size:14.5px;color:#4A5560;line-height:1.62;flex:1}
+  .pkg .price{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px;color:#111;font-weight:bold}
+  .pkg .price span{display:block;font-weight:normal;color:var(--muted);font-size:12.5px;margin-top:2px}
+  /* method steps */
+  .step-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:3px;padding:18px 16px}
+  .step .n{display:inline-block;width:26px;height:26px;border-radius:50%;background:#1A1A1A;color:#fff;font-size:13px;font-weight:bold;text-align:center;line-height:26px;margin-bottom:10px}
+  .step h3{font-size:14.5px;color:#111;font-weight:bold;margin-bottom:6px}
+  .step p{font-size:13px;color:#4A5560;line-height:1.55}
+  @media(max-width:920px){.pkg-grid{grid-template-columns:1fr}.step-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:640px){.step-grid{grid-template-columns:1fr}.lang{gap:8px;font-size:12px}}
 </style>
 </head>
 <body>
 
 <div class="topbar">
   <div class="wrap">
-    <div class="brand">Aandrey Shalnov<span> · <a href="../" title="Русская версия" lang="ru">Андрей Шальнов</a></span></div>
+    <div class="brand">Aandrey Shalnov<span> · China — Russia</span></div>
     <nav class="nav">
+      <a href="#packages">Services</a>
+      <a href="#cases">Cases</a>
+      <a href="#method">Process</a>
       <a href="#about">About</a>
-      <a href="#exp">Experience</a>
-      <a href="#cases">Projects</a>
-      <a href="#skills">Skills</a>
-      <a href="#contacts">Contacts</a>
+      <a href="cv/">Full CV</a>
     </nav>
+    <div class="lang"><a href="../" lang="ru">RU</a><span class="cur">EN</span><a href="../cn/" lang="zh-CN">中文</a></div>
   </div>
 </div>
 
 <div class="sheet">
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Product &amp; Engineering Director</div>
-    <h1>Aandrey Shalnov</h1>
-    <p class="lead">I take electronic products <b>from the first sketch to volume production</b> — 25+ years in electronics, close to the hardware: circuit design, PCBs, embedded software, certification, the factory floor. <b>Honeywell, Bosch, ABB, Rubezh Group.</b></p>
-    <p class="geo">Moscow · open to relocation · business trips across Russia and worldwide</p>
+    <div class="eyebrow">Engineering sourcing &amp; product launches · China → Russia</div>
+    <h1>China sourcing and product launches — with an engineer's guarantee</h1>
+    <p class="lead">25+ years in electronics: <b>Honeywell, Bosch, ABB, Rubezh Group</b>. 30+ personal factory audits in China, 4 lines taken 0→series, 2,300+ SKUs. <b>I cut sourcing costs by 15–30% — and can work for a share of the savings.</b></p>
+    <p class="geo">Moscow · business trips to China and across Russia · English as the working language</p>
     <div class="cta">
-      <a class="btn gold" href="mailto:andrey.shalnov@gmail.com">andrey.shalnov@gmail.com</a>
+      <a class="btn gold" href="mailto:andrey.shalnov@gmail.com?subject=Sourcing%20audit%20request">Free 20-minute sourcing review</a>
+      <a class="btn" href="https://t.me/andrey_shalnov" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn" href="https://wa.me/79165948682" target="_blank" rel="noopener">WhatsApp</a>
       <a class="btn" href="tel:+79165948682">+7 (916) 594-86-82</a>
-      <a class="btn" href="https://github.com/andreyshalnov" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://www.linkedin.com/in/andrey-shalnov/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </header>
@@ -198,211 +223,105 @@
   <div class="wrap">
     <div class="grid">
       <div class="metric"><div class="num">25<em>+</em></div><div class="lbl">years in electronics</div></div>
-      <div class="metric"><div class="num">8</div><div class="lbl">product lines under my leadership</div></div>
+      <div class="metric"><div class="num">30<em>+</em></div><div class="lbl">personal factory audits in China</div></div>
+      <div class="metric"><div class="num">4</div><div class="lbl">lines taken 0→series</div></div>
       <div class="metric"><div class="num">2,300<em>+</em></div><div class="lbl">SKUs in my own portfolio</div></div>
-      <div class="metric"><div class="num">4</div><div class="lbl">lines taken 0→series since 2022</div></div>
-      <div class="metric"><div class="num">2,000<em>+</em></div><div class="lbl">specialists trained and certified</div></div>
-      <div class="metric"><div class="num">30<em>+</em></div><div class="lbl">OEM/ODM factory audits in China</div></div>
+      <div class="metric"><div class="num">27<em>&nbsp;mln&nbsp;₽</em></div><div class="lbl">of sourcing deals in 3 years — personally</div></div>
+      <div class="metric"><div class="num">15–30<em>%</em></div><div class="lbl">target sourcing savings</div></div>
     </div>
   </div>
 </div>
 
-<section class="about" id="about">
+<section class="cases" id="packages">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Profile</div>
-      <h2 class="sec">Specialization — launch</h2>
+      <div class="sec-label">Services</div>
+      <h2 class="sec">Three ways to work</h2>
       <hr class="sec-rule">
     </div>
-    <p><b>Full product cycle:</b> business case → technical specifications → prototypes → certification (TR&nbsp;CU&nbsp;/&nbsp;GOST) → pilot batch → volume production → QA/QC. I lead teams through stage-gate processes with real authority to say «stop» — before the budget burns down, not after.</p>
-    <p><b>Manufacturing base:</b> own volume production in Russia and OEM/ODM partnerships in China — 30+ factory audits, direct contracts, quality control on site. Product economics is part of engineering for me: cost, pricing, margin and unit economics are computed together with the technical decisions, not after them.</p>
-    <p class="principle">«I hire people who are stronger than me in their field, give them a mandate and a safety net, and grow them through grades and mentoring. And I keep one uncomfortable habit — regularly checking that the value I create exceeds what I cost».</p>
+    <div class="pkg-grid">
+      <div class="pkg">
+        <div class="tag">Pay for results</div>
+        <h3>Sourcing &amp; price audit</h3>
+        <p>I review your current purchases and factory price lists: the real factory price, cost structure, logistics, points where money leaks. A report with numbers — within one week. I work in categories that do not overlap with my current employer's product lines.</p>
+        <div class="price">15–20% of verified first-year savings<span>or a fixed fee — depends on volumes</span></div>
+      </div>
+      <div class="pkg">
+        <div class="tag">From $300 per check</div>
+        <h3>Inspections &amp; acceptance in China</h3>
+        <p>Pre-shipment and in-line AQL inspections, acceptance at the manufacturer's site, photo and video report within 24 hours. My network of vetted inspectors and my own reporting standard — the same I use for my own product lines.</p>
+        <div class="price">$300–450 / inspection<span>factory visit — 1–2 days from request</span></div>
+      </div>
+      <div class="pkg">
+        <div class="tag">Turnkey project</div>
+        <h3>Product launch 0→series</h3>
+        <p>Specifications → factory selection and audit → samples and DFM → TR CU certification → pilot batch → volume production, "Chestny Znak" marking and white imports. For brands that need their own device, not resale.</p>
+        <div class="price">Stage payments by roadmap<span>from specs to first batch — 4–7 months</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="exp" id="exp">
+<section class="exp" id="cases">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Experience</div>
-      <h2 class="sec">25 years in the industry</h2>
-      <hr class="sec-rule">
-    </div>
-    <ul class="tl">
-      <li>
-        <div class="period">December 2022 — present</div>
-        <h3>Rubezh Group (Tekhnolight LLC), Moscow</h3>
-        <div class="role">Head of Private-Label Department / Lead Product Lines Manager</div>
-        <div class="desc">A portfolio of <b>8 own product lines</b> (2,300+ SKU, annual revenue above <b>₽1 bn</b>). Four lines taken from zero to series — SIP intercoms, network switches, electronic locks, Network Switching Units: all among the group's top lines by gross margin. Full cycle: specifications → OEM/ODM (China, Russia) → design documentation → certification → series → sales launch → quality control. A distribution channel built from scratch, up to <b>50% of sales</b> through distributors by 2026.</div>
-      </li>
-      <li>
-        <div class="period">2011 — 2022</div>
-        <h3>ABB, Moscow</h3>
-        <div class="role">Head of Building Security Systems</div>
-        <div class="desc">Built the business in Russia <b>from scratch and ran it for 11 years</b> — the largest building-security expertise and sales team in ABB Russia (adjacent revenue <b>₽500–900 m/year</b>). Joint development with ABB R&amp;D centers in Germany and China; localization of products and software. Owned pricing, cost and margin of the business; business cases for flagship projects (ZILART and others). Trained and certified <b>2,000+ integrators</b>. Author of a blog on ABB door-entry systems — <a href="https://abb-des.blogspot.com/" target="_blank" rel="noopener">abb-des.blogspot.com</a>.</div>
-      </li>
-      <li>
-        <div class="period">2009 — 2011</div>
-        <h3>Prissko, Moscow</h3>
-        <div class="role">Lead Project Engineer / Department Manager</div>
-        <div class="desc">Lead engineer on the <b>largest Bosch security systems project in Eastern Europe</b>: the Federation Tower (VTB Bank) — delivered on time. Designed the PSIM architecture (Bosch BIS) with 100% subsystem integration, worked with Bosch R&amp;D in Frankfurt. Integration platform sales grew <b>10×</b>.</div>
-      </li>
-      <li>
-        <div class="period">2008 — 2009</div>
-        <h3>Bosch, Moscow</h3>
-        <div class="role">Product Manager, Security Systems Division</div>
-        <div class="desc">Managed the Bosch security systems portfolio in Russia: localization, pricing, technical expertise, partner training. After the 2009 restructuring, returned to a project role — technical expert on Bosch's largest project in the region.</div>
-      </li>
-      <li>
-        <div class="period">2005 — 2008</div>
-        <h3>Honeywell, Moscow</h3>
-        <div class="role">Project Manager / Team Lead</div>
-        <div class="desc">Grew from engineer to team lead within a year; managed international specialists (Turkey, India). <b>The first smart residential building in Russia</b> (Copernicus residence) — all low-voltage sections. Commissioned CCTV with face and license-plate recognition, access control and fire automation at Pilkington, Rehau, Silver City. <b>Honeywell Superstars Award (2006)</b>.</div>
-      </li>
-      <li>
-        <div class="period">2004 — 2005</div>
-        <h3>Alarm Telecom, Moscow</h3>
-        <div class="role">Security Systems Engineer</div>
-        <div class="desc">Design and commissioning of security systems. Key site: <b>the Chekhov Moscow Art Theatre</b>.</div>
-      </li>
-      <li>
-        <div class="period">2001 — 2004</div>
-        <h3>ASPT Spetsavtomatika, Moscow</h3>
-        <div class="role">Deputy Head of R&amp;D</div>
-        <div class="desc">A line of fire automation equipment: up to <b>a new device per month</b> at peak — circuit design, PCB routing, SMD assembly, pre-production, software debugging, ESKD documentation, launch to series. The equipment operates at federal-level sites: <b>the Moscow Kremlin, Lefortovo, the Central Bank of Russia, Sberbank</b>.</div>
-      </li>
-      <li>
-        <div class="period">1999 — 2000</div>
-        <h3>Almaz-Antey Concern, radar R&amp;D, Murom</h3>
-        <div class="role">Electronics Engineer</div>
-        <div class="desc">Software for radar systems (C++, Assembler). A working prototype of a digital pulse-compression filter on an Altera FPGA — passed state testing; the project formed the basis of my diploma thesis.</div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="cases" id="cases">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-label">Selected Projects</div>
-      <h2 class="sec">Product / role / result</h2>
+      <div class="sec-label">Cases</div>
+      <h2 class="sec">Results in numbers</h2>
       <hr class="sec-rule">
     </div>
     <div class="case-grid">
       <div class="case">
-        <div class="tag">0 → series · 2022–2024</div>
-        <h3>SpaceCam SIP Intercoms &amp; Access Control</h3>
-        <p>A line taken from zero to volume production: <b>120 SKU</b> — from the business case and specifications to OEM manufacturing in China, TR CU certification and series launch. A unique solution complementing the Rubezh Group portfolio.</p>
+        <div class="tag">Sourcing · personally</div>
+        <h3>SIP intercom line, 120 SKUs</h3>
+        <p>Taken from scratch to series: OEM production in China, TR CU certification, on-site acceptance. A <b>12 mln ₽</b> sourcing deal handled personally.</p>
       </div>
       <div class="case">
-        <div class="tag">0 → series · 2023–2024</div>
-        <h3>SpaceCam Switching Units</h3>
-        <p><b>20+ SKU</b>: mechanics + electronics + own design documentation, on-site acceptance at the manufacturer, first warranty claims and reworking of the solution, series launch and promotion in video surveillance projects.</p>
+        <div class="tag">Repeat orders</div>
+        <h3>Network switches and switching units</h3>
+        <p>Repeat purchases worth <b>10 mln ₽</b>; a separate line of switching units — <b>20+ SKUs</b>: own design documentation, rework after first warranty claims, series production.</p>
+      </div>
+      <div class="case">
+        <div class="tag">Repeat orders</div>
+        <h3>Electronic locks</h3>
+        <p>Repeat <b>5 mln ₽</b> purchases for a security-systems manufacturer's line: stable batch quality and on-time delivery.</p>
       </div>
       <div class="case">
         <div class="tag">Business build · 11 years</div>
-        <h3>Building Security and Automation Systems, ABB Russia</h3>
-        <p>Created from scratch, an international team of security systems expertise and sales at ABB Russia: <b>₽500–900 m/year</b> of adjacent revenue, joint development with R&amp;D in Germany and China, 2,000+ certified integrators and installers.</p>
-      </div>
-      <div class="case">
-        <div class="tag">Flagship site · on time</div>
-        <h3>Federation Tower, VTB Bank</h3>
-        <p>The largest Bosch security systems project in Eastern Europe: the full cycle from requirements and design to installation, commissioning and handover — <b>on time</b>. PSIM architecture on Bosch BIS with 100% subsystem integration, software localization with Bosch R&amp;D in Germany.</p>
+        <h3>Building Security, ABB Russia</h3>
+        <p>Built from scratch: <b>500–900 mln ₽/year</b> in adjacent turnover, 2,000+ trained integrators, joint development with R&amp;D in Germany and China.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="comp" id="skills">
+<section class="comp" id="method">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Competencies</div>
-      <h2 class="sec">What I do — hands-on and end to end</h2>
+      <div class="sec-label">Process</div>
+      <h2 class="sec">Five steps from idea to batch</h2>
       <hr class="sec-rule">
     </div>
-    <div class="comp-grid">
-      <div class="comp-card">
-        <h3>Product &amp; Launch</h3>
-        <ul>
-          <li>NPI 0→1: business case to series</li>
-          <li>Stage-gate processes, real stop authority</li>
-          <li>Specifications, technical documentation</li>
-          <li>Product roadmaps</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Engineering</h3>
-        <ul>
-          <li>Electronics: circuit design, PCBs</li>
-          <li>Embedded software, IoT connectivity</li>
-          <li>ESKD design documentation</li>
-          <li>Security: fire alarm, access control, CCTV</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Manufacturing &amp; Supply</h3>
-        <ul>
-          <li>Volume production, QA/QC</li>
-          <li>OEM/ODM in China, 30+ audits</li>
-          <li>Direct contracts with factories</li>
-          <li>Production ramp-up</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Certification</h3>
-        <ul>
-          <li>TR CU, GOST, fire safety codes</li>
-          <li>Testing and acceptance</li>
-          <li>Federal sites: clearance and access regime</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Product Economics</h3>
-        <ul>
-          <li>Cost engineering</li>
-          <li>Pricing and margin</li>
-          <li>Line-level unit economics</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Team</h3>
-        <ul>
-          <li>Hiring and grading engineers</li>
-          <li>Mentoring, people development</li>
-          <li>Cross-functional teams up to 35</li>
-        </ul>
-      </div>
+    <div class="step-grid">
+      <div class="step"><div class="n">1</div><h3>Specifications</h3><p>From a voice brief — within 48 hours, in Russian, English and Chinese.</p></div>
+      <div class="step"><div class="n">2</div><h3>Factory price audit</h3><p>3+ factories in parallel, the real factory price, one comparison table.</p></div>
+      <div class="step"><div class="n">3</div><h3>Samples &amp; DFM</h3><p>Engineering review of samples and manufacturability — before you pay for the batch.</p></div>
+      <div class="step"><div class="n">4</div><h3>Inspection &amp; acceptance</h3><p>AQL sampling, photo and video report, my on-site acceptance standard.</p></div>
+      <div class="step"><div class="n">5</div><h3>Logistics &amp; certification</h3><p>White imports, TR CU, "Chestny Znak" codes — straight into legal circulation.</p></div>
     </div>
   </div>
 </section>
 
-<section class="edu" id="edu">
+<section class="about" id="about">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Education · Certifications · Awards</div>
-      <h2 class="sec">Formal background</h2>
+      <div class="sec-label">About</div>
+      <h2 class="sec">An engineer, not a middleman</h2>
       <hr class="sec-rule">
     </div>
-    <div class="edu-grid">
-      <div class="edu-card">
-        <div class="y">2000</div>
-        <h3>Vladimir State University</h3>
-        <p>Engineer — Radio Engineering / Systems Engineering</p>
-      </div>
-      <div class="edu-card">
-        <div class="y">2006</div>
-        <h3>Honeywell Superstars Award</h3>
-        <p>Corporate award for outstanding performance</p>
-      </div>
-      <div class="edu-card">
-        <div class="y">2010</div>
-        <h3>Bosch Academy, Frankfurt am Main</h3>
-        <p>Building Integration System — architecture and integration</p>
-      </div>
-      <div class="edu-card">
-        <div class="y">2023</div>
-        <h3>AI Fundamentals for Business · Content AI</h3>
-        <p>Product Strategy &amp; Vision — product strategy</p>
-      </div>
+    <p>I am not a cargo agent and not a "buying agent". I am an engineer with 25 years in the field: for 11 years I built ABB's building security business in Russia, then took <b>4 electronics lines to series production</b> for a national security-systems manufacturer — including circuit design, certification and China factories through personal audits.</p>
+    <p>My incentive matches yours: savings are confirmed by numbers in the report, quality — by on-site acceptance. That is why I offer a <b>pay-for-results</b> model: no verified savings — no percentage fee.</p>
+    <div class="cta" style="margin-top:22px">
+      <a class="btn gold" href="cv/">Full CV — 25 years, 8 positions</a>
     </div>
   </div>
 </section>
@@ -410,17 +329,17 @@
 <section class="contacts" id="contacts">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Get in touch</div>
-      <h2 class="sec">Contacts</h2>
+      <div class="sec-label">Contact</div>
+      <h2 class="sec">Get in touch</h2>
       <hr class="sec-rule" style="background:#FFFFFF">
     </div>
     <div class="contact-grid">
+      <a class="contact-card" href="https://t.me/andrey_shalnov" target="_blank" rel="noopener"><div class="t">Telegram</div><div class="v">@andrey_shalnov</div></a>
+      <a class="contact-card" href="https://wa.me/79165948682" target="_blank" rel="noopener"><div class="t">WhatsApp</div><div class="v">+7 (916) 594-86-82</div></a>
       <a class="contact-card" href="mailto:andrey.shalnov@gmail.com"><div class="t">Email</div><div class="v">andrey.shalnov@gmail.com</div></a>
       <a class="contact-card" href="tel:+79165948682"><div class="t">Phone</div><div class="v">+7 (916) 594-86-82</div></a>
-      <a class="contact-card" href="https://www.linkedin.com/in/andrey-shalnov/" target="_blank" rel="noopener"><div class="t">LinkedIn</div><div class="v">in/andrey-shalnov</div></a>
-      <a class="contact-card" href="https://github.com/andreyshalnov" target="_blank" rel="noopener"><div class="t">GitHub</div><div class="v">github.com/andreyshalnov</div></a>
     </div>
-    <p class="geo-note">Moscow · open to relocation · business trips across Russia and worldwide · English — working proficiency (negotiations and factory audits in China)</p>
+    <p class="geo-note">I reply within 24 hours · Moscow, MSK (UTC+3) · business trips to China · languages: Russian, English, 中文</p>
   </div>
 </section>
 </div>
@@ -428,26 +347,28 @@
 <footer>
   <div class="wrap">
     <div>© 2026 Aandrey Shalnov</div>
-    <div>Electronics: 0→1 to series production</div>
+    <div>Engineering sourcing and product launches · China — Russia</div>
   </div>
 </footer>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Aandrey Shalnov",
-  "alternateName": "Андрей Шальнов",
-  "jobTitle": "Product & Engineering Director",
-  "email": "mailto:andrey.shalnov@gmail.com",
-  "telephone": "+7 916 594 86 82",
+  "@type": "ProfessionalService",
+  "name": "Aandrey Shalnov — engineering sourcing and product launches (China — Russia)",
+  "description": "Sourcing and price audits of Chinese factories, on-site inspections and acceptance, 0→series product launches, TR CU certification, Chestny Znak marking. Pay-for-results model available.",
   "url": "https://andreyshalnov.github.io/iam/en/",
-  "sameAs": ["https://github.com/andreyshalnov", "https://www.linkedin.com/in/andrey-shalnov/"],
-  "address": {"@type": "PostalAddress", "addressLocality": "Moscow", "addressCountry": "RU"},
-  "alumniOf": ["Vladimir State University", "Honeywell", "Bosch", "ABB"],
-  "knowsLanguage": ["ru", "en"],
-  "description": "Product and engineering leader in electronics. 25+ years: launching products 0→1 to series production, TR CU/GOST certification, OEM/ODM in China."
+  "areaServed": ["RU", "EAEU", "CN"],
+  "provider": {
+    "@type": "Person",
+    "name": "Andrey Shalnov",
+    "email": "mailto:andrey.shalnov@gmail.com",
+    "telephone": "+7 916 594 86 82",
+    "address": {"@type": "PostalAddress", "addressLocality": "Moscow", "addressCountry": "RU"},
+    "knowsLanguage": ["ru", "en"]
+  }
 }
 </script>
+
 </body>
 </html>

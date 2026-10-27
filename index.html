@@ -3,11 +3,13 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Андрей Шальнов — Product &amp; Engineering Director · Электроника: 0→1 до серии</title>
-<meta name="description" content="Андрей Шальнов — руководитель продукта и разработки в электронике. 25+ лет: Honeywell, Bosch, ABB, ГК «Рубеж». Запуск изделий 0→1 до серийного производства, сертификация ТР ТС/ГОСТ, OEM/ODM в Китае.">
+<title>Закупки и запуск электроники из Китая — инженерный аудит | Андрей Шальнов</title>
+<meta name="description" content="Инженерные закупки в Китае с гарантией: аудит прайсов и экономия 15–30% (оплата от результата), инспекции и приёмка на фабрике от $300, запуск изделий 0→серия. 25 лет: Honeywell, Bosch, ABB, ГК «Рубеж». 30+ аудитов фабрик.">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='8' fill='%234A7AA8'/%3E%3Ctext x='32' y='42' font-family='Arial,sans-serif' font-size='28' fill='%23FFFFFF' text-anchor='middle'%3E%D0%90%D0%A8%3C/text%3E%3C/svg%3E">
+<link rel="canonical" href="https://andreyshalnov.github.io/iam/">
 <link rel="alternate" hreflang="ru" href="https://andreyshalnov.github.io/iam/">
 <link rel="alternate" hreflang="en" href="https://andreyshalnov.github.io/iam/en/">
+<link rel="alternate" hreflang="zh-CN" href="https://andreyshalnov.github.io/iam/cn/">
 <link rel="alternate" hreflang="x-default" href="https://andreyshalnov.github.io/iam/">
 <style>
   :root{
@@ -161,35 +163,58 @@
     body{font-size:12px}
     .contacts{-webkit-print-color-adjust:exact;print-color-adjust:exact}
   }
+
+  /* language switcher */
+  .lang{display:flex;gap:12px;align-items:center;font-size:12.5px;font-weight:bold;letter-spacing:.5px;flex-shrink:0}
+  .lang a{color:#1A1A1A;text-decoration:none}
+  .lang a:hover{color:#004B7A;text-decoration:underline}
+  .lang .cur{color:#8A8A8A}
+  /* packages */
+  .pkg-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+  .pkg{border:1px solid var(--line);border-top:3px solid var(--blue);border-radius:3px;padding:24px 26px;background:#fff;display:flex;flex-direction:column}
+  .pkg .tag{display:inline-block;font-size:11px;letter-spacing:1.6px;text-transform:uppercase;color:var(--blue-link);font-weight:bold;margin-bottom:9px}
+  .pkg h3{font-size:18px;color:#111;margin:0 0 8px;font-weight:bold}
+  .pkg p{font-size:14.5px;color:#4A5560;line-height:1.62;flex:1}
+  .pkg .price{margin-top:14px;padding-top:12px;border-top:1px solid var(--line);font-size:13.5px;color:#111;font-weight:bold}
+  .pkg .price span{display:block;font-weight:normal;color:var(--muted);font-size:12.5px;margin-top:2px}
+  /* method steps */
+  .step-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}
+  .step{background:#fff;border:1px solid var(--line);border-radius:3px;padding:18px 16px}
+  .step .n{display:inline-block;width:26px;height:26px;border-radius:50%;background:#1A1A1A;color:#fff;font-size:13px;font-weight:bold;text-align:center;line-height:26px;margin-bottom:10px}
+  .step h3{font-size:14.5px;color:#111;font-weight:bold;margin-bottom:6px}
+  .step p{font-size:13px;color:#4A5560;line-height:1.55}
+  @media(max-width:920px){.pkg-grid{grid-template-columns:1fr}.step-grid{grid-template-columns:1fr 1fr}}
+  @media(max-width:640px){.step-grid{grid-template-columns:1fr}.lang{gap:8px;font-size:12px}}
 </style>
 </head>
 <body>
 
 <div class="topbar">
   <div class="wrap">
-    <div class="brand">Андрей Шальнов<span> · <a href="en/" title="English version" lang="en">Aandrey Shalnov</a></span></div>
+    <div class="brand">Андрей Шальнов<span> · Китай — Россия</span></div>
     <nav class="nav">
-      <a href="#about">Профиль</a>
-      <a href="#exp">Опыт</a>
-      <a href="#cases">Проекты</a>
-      <a href="#skills">Компетенции</a>
-      <a href="#contacts">Контакты</a>
+      <a href="#packages">Услуги</a>
+      <a href="#cases">Кейсы</a>
+      <a href="#method">Как работаю</a>
+      <a href="#about">Обо мне</a>
+      <a href="cv/">Полное CV</a>
     </nav>
+    <div class="lang"><span class="cur">RU</span><a href="en/" lang="en">EN</a><a href="cn/" lang="zh-CN">中文</a></div>
   </div>
 </div>
 
 <div class="sheet">
 <header class="hero">
   <div class="wrap">
-    <div class="eyebrow">Product &amp; Engineering Director</div>
-    <h1>Андрей Шальнов</h1>
-    <p class="lead">Вывожу электронные изделия <b>от первого эскиза до серийного производства</b> — 25+ лет в электронике, рядом с железом: схемотехника, платы, встроенное ПО, сертификация, цех. <b>Honeywell, Bosch, ABB, ГК «Рубеж».</b></p>
-    <p class="geo">Москва · релокация, командировки по РФ и за рубеж</p>
+    <div class="eyebrow">Инженерные закупки и запуск электроники · Китай → Россия</div>
+    <h1>Закупки в Китае и запуск изделий — с инженерной гарантией</h1>
+    <p class="lead">25+ лет в электронике: <b>Honeywell, Bosch, ABB, ГК «Рубеж»</b>. 30+ личных аудитов заводов в Китае, 4 линейки выведены 0→серия, 2 300+ SKU. <b>Снижаю себестоимость закупок на 15–30% — готов работать за процент от сэкономленного.</b></p>
+    <p class="geo">Москва · командировки в Китай и по РФ · английский — рабочий язык переговоров</p>
     <div class="cta">
-      <a class="btn gold" href="mailto:andrey.shalnov@gmail.com">andrey.shalnov@gmail.com</a>
+      <a class="btn gold" href="mailto:andrey.shalnov@gmail.com?subject=Аудит%20закупок%20—%20запрос%20с%20сайта">Бесплатный 20-минутный разбор закупок</a>
+      <a class="btn" href="https://t.me/andrey_shalnov" target="_blank" rel="noopener">Telegram</a>
+      <a class="btn" href="https://wa.me/79165948682" target="_blank" rel="noopener">WhatsApp</a>
       <a class="btn" href="tel:+79165948682">+7 (916) 594-86-82</a>
-      <a class="btn" href="https://github.com/andreyshalnov" target="_blank" rel="noopener">GitHub</a>
-      <a class="btn" href="https://www.linkedin.com/in/andrey-shalnov/" target="_blank" rel="noopener">LinkedIn</a>
     </div>
   </div>
 </header>
@@ -198,211 +223,105 @@
   <div class="wrap">
     <div class="grid">
       <div class="metric"><div class="num">25<em>+</em></div><div class="lbl">лет в электронике</div></div>
-      <div class="metric"><div class="num">8</div><div class="lbl">продуктовых направлений под управлением</div></div>
+      <div class="metric"><div class="num">30<em>+</em></div><div class="lbl">личных аудитов фабрик Китая</div></div>
+      <div class="metric"><div class="num">4</div><div class="lbl">линейки выведены 0→серия</div></div>
       <div class="metric"><div class="num">2 300<em>+</em></div><div class="lbl">SKU в собственном портфеле</div></div>
-      <div class="metric"><div class="num">4</div><div class="lbl">линейки выведены 0→серия с 2022 года</div></div>
-      <div class="metric"><div class="num">2 000<em>+</em></div><div class="lbl">обученных и сертифицированных специалистов</div></div>
-      <div class="metric"><div class="num">30<em>+</em></div><div class="lbl">аудитов OEM/ODM-заводов в Китае</div></div>
+      <div class="metric"><div class="num">27<em>&nbsp;млн&nbsp;₽</em></div><div class="lbl">закупочных сделок за 3 года — лично</div></div>
+      <div class="metric"><div class="num">15–30<em>%</em></div><div class="lbl">целевая экономия на закупке</div></div>
     </div>
   </div>
 </div>
 
-<section class="about" id="about">
+<section class="cases" id="packages">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Профиль</div>
-      <h2 class="sec">Специализация — запуск</h2>
+      <div class="sec-label">Услуги</div>
+      <h2 class="sec">Три формата работы</h2>
       <hr class="sec-rule">
     </div>
-    <p><b>Полный цикл изделия:</b> бизнес-кейс → техническое задание → опытные образцы → сертификация (ТР&nbsp;ТС&nbsp;/&nbsp;ГОСТ) → установочная серия → серийный выпуск → QA/QC. Веду команды через гейт-процессы с настоящим правом «стоп» — до того, как сгорит бюджет, а не после.</p>
-    <p><b>Производственная база:</b> собственное серийное производство в России и OEM/ODM-партнёрства в Китае — 30+ аудитов заводов, прямые контракты, контроль качества на площадке. Экономика продукта для меня часть инженерии: себестоимость, ценообразование, маржа и unit-экономика считаются вместе с техническими решениями, а не после них.</p>
-    <p class="principle">«Нанимаю людей, которые сильнее меня в их области, даю мандат и подстраховку, выращиваю через грейды и наставничество. И держу одну неудобную привычку — регулярно сверять, что создаваемая ценность превышает мою стоимость».</p>
+    <div class="pkg-grid">
+      <div class="pkg">
+        <div class="tag">Оплата от результата</div>
+        <h3>Аудит закупок и прайсов</h3>
+        <p>Разбираю ваши текущие закупки и прайсы фабрик: реальная фабричная цена, структура себестоимости, логистика, точки потери денег. Отчёт с цифрами — за одну неделю. Работаю в категориях, не пересекающихся с линейками текущего работодателя.</p>
+        <div class="price">15–20% от подтверждённой экономии первого года<span>или фикс — по объёму закупок</span></div>
+      </div>
+      <div class="pkg">
+        <div class="tag">От $300 за чек</div>
+        <h3>Инспекции и приёмка в Китае</h3>
+        <p>Предотгрузочные и инлайн-инспекции по AQL, приёмка на площадке производителя, фото- и видеоотчёт за 24 часа. Моя сеть проверенных инспекторов и мой стандарт отчёта — тот же, что для собственных линеек.</p>
+        <div class="price">$300–450 / инспекция<span>выезд на фабрику — 1–2 дня от заявки</span></div>
+      </div>
+      <div class="pkg">
+        <div class="tag">Проект под ключ</div>
+        <h3>Запуск изделия 0→серия</h3>
+        <p>ТЗ и спецификация → выбор и аудит фабрики → образцы и DFM → сертификация ТР ТС → пилотная партия → серийный выпуск, маркировка «Честный знак» и белый импорт. Для брендов, которым нужно своё устройство, а не перепродажа.</p>
+        <div class="price">Оплата этапами по дорожной карте<span>от ТЗ до первой партии — 4–7 месяцев</span></div>
+      </div>
+    </div>
   </div>
 </section>
 
-<section class="exp" id="exp">
+<section class="exp" id="cases">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Опыт</div>
-      <h2 class="sec">25 лет в индустрии</h2>
-      <hr class="sec-rule">
-    </div>
-    <ul class="tl">
-      <li>
-        <div class="period">Декабрь 2022 — настоящее время</div>
-        <h3>ГК «Рубеж» (ООО «Технолайт»), Москва</h3>
-        <div class="role">Руководитель отдела СТМ / Ведущий руководитель направлений</div>
-        <div class="desc">Портфель из <b>8 собственных линеек</b> (2 300+ SKU, оборот свыше <b>1 млрд ₽ в год</b>). С нуля выведены в серию 4 линейки — SIP-домофония, сетевые коммутаторы, электронные замки, Сетевые узлы коммутации: все в топе группы по валовой прибыли. Полный цикл: ТЗ → OEM/ODM (Китай, Россия) → КД → сертификация → серия → запуск продаж → контроль качества. Канал дистрибуции построен с нуля, до <b>50% продаж</b> через дистрибуторов в 2026 году.</div>
-      </li>
-      <li>
-        <div class="period">2011 — 2022</div>
-        <h3>ABB, Москва</h3>
-        <div class="role">Руководитель направления «Системы безопасности зданий»</div>
-        <div class="desc">Построил направление в России <b>с нуля и управлял им 11 лет</b> — крупнейшая команда экспертизы и продаж систем безопасности в ABB Россия (смежный оборот <b>500–900 млн ₽/год</b>). Совместные разработки с R&amp;D-центрами ABB в Германии и Китае; локализация продуктов и ПО. Отвечал за ценообразование, себестоимость и маржу направления; бизнес-кейсы флагманских проектов (ЗИЛАРТ и др.). Обучил и сертифицировал <b>2 000+ интеграторов</b>. Автор блога о домофонных системах ABB — <a href="https://abb-des.blogspot.com/" target="_blank" rel="noopener">abb-des.blogspot.com</a>.</div>
-      </li>
-      <li>
-        <div class="period">2009 — 2011</div>
-        <h3>Присско, Москва</h3>
-        <div class="role">Ведущий инженер проекта / руководитель отдела</div>
-        <div class="desc">Ведущий инженер <b>крупнейшего проекта систем безопасности Bosch в Восточной Европе</b>: башня «Федерация» (Банк ВТБ) — сдан в срок. Спроектировал архитектуру PSIM (Bosch BIS) с интеграцией 100% подсистем, работал с R&amp;D Bosch во Франкфурте. Рост продаж интеграционных платформ — <b>×10</b>.</div>
-      </li>
-      <li>
-        <div class="period">2008 — 2009</div>
-        <h3>Bosch, Москва</h3>
-        <div class="role">Менеджер продукта, подразделение систем безопасности</div>
-        <div class="desc">Управление портфелем систем безопасности Bosch в России: локализация, ценообразование, техническая экспертиза, обучение партнёров. После реструктуризации 2009 года вернулся к проектной роли — технический эксперт крупнейшего проекта Bosch в регионе.</div>
-      </li>
-      <li>
-        <div class="period">2005 — 2008</div>
-        <h3>Honeywell, Москва</h3>
-        <div class="role">Руководитель проектов / руководитель группы</div>
-        <div class="desc">Вырос от инженера до руководителя участка за год; управлял международными специалистами (Турция, Индия). <b>Первый в России «умный» жилой дом</b> (ЖК «Коперник») — все слаботочные разделы. Пуск CCTV с распознаванием лиц и номеров, СКУД, пожарной автоматики на Pilkington, Rehau, Silver City. <b>Награда Honeywell Superstars (2006)</b>.</div>
-      </li>
-      <li>
-        <div class="period">2004 — 2005</div>
-        <h3>Аларм Телеком, Москва</h3>
-        <div class="role">Инженер систем безопасности</div>
-        <div class="desc">Проектирование и пусконаладка систем безопасности. Ключевой объект — <b>МХАТ им. А. П. Чехова</b>.</div>
-      </li>
-      <li>
-        <div class="period">2001 — 2004</div>
-        <h3>АСПТ «Спецавтоматика», Москва</h3>
-        <div class="role">Заместитель руководителя R&amp;D отдела</div>
-        <div class="desc">Линейка оборудования пожарной автоматики: до <b>нового прибора в месяц</b> на пике — схемотехника, трассировка плат, SMD-монтаж, предсерийное производство, отладка ПО, ЕСКД, выход на серию. Оборудование работает на объектах федерального уровня: <b>Московский Кремль, Лефортово, Центральный банк РФ, Сбербанк</b>.</div>
-      </li>
-      <li>
-        <div class="period">1999 — 2000</div>
-        <h3>Концерн «Алмаз-Антей», НИОКР радиолокации, Муром</h3>
-        <div class="role">Инженер-электроник</div>
-        <div class="desc">ПО для радиолокационных систем (C++, Assembler). Рабочий прототип цифрового фильтра сжатия импульсов на ПЛИС Altera — прошёл госиспытания; проект лёг в основу диплома.</div>
-      </li>
-    </ul>
-  </div>
-</section>
-
-<section class="cases" id="cases">
-  <div class="wrap">
-    <div class="sec-head">
-      <div class="sec-label">Избранные проекты</div>
-      <h2 class="sec">Изделие / роль / результат</h2>
+      <div class="sec-label">Кейсы</div>
+      <h2 class="sec">Результаты в цифрах</h2>
       <hr class="sec-rule">
     </div>
     <div class="case-grid">
       <div class="case">
-        <div class="tag">0 → серия · 2022–2024</div>
-        <h3>SIP-домофония и СКУД «SpaceCam»</h3>
-        <p>Линейка выведена с нуля до серийного производства: <b>120 SKU</b> — от бизнес-кейса и ТЗ до OEM-производства в Китае, сертификации ТР ТС и постановки на серию. Уникальное решение, дополняющее портфолио в ГК «Рубеж».</p>
+        <div class="tag">Закупка · лично</div>
+        <h3>Линейка SIP-домофонии, 120 SKU</h3>
+        <p>Выведена с нуля до серии: OEM-производство в Китае, сертификация ТР ТС, приёмка на площадке. Закупочная сделка <b>12 млн ₽</b> проведена лично.</p>
       </div>
       <div class="case">
-        <div class="tag">0 → серия · 2023–2024</div>
-        <h3>Узлы коммутации SpaceCam</h3>
-        <p><b>20+ SKU</b>: механика + электроника + собственная КД, приёмка на площадке производителя, первые рекламации и доработка решения, выход в серию и продвижение в проектах систем видеонаблюдения.</p>
+        <div class="tag">Дозаказ · повторные партии</div>
+        <h3>Сетевые коммутаторы и узлы коммутации</h3>
+        <p>Повторные закупки на <b>10 млн ₽</b>; отдельная линейка узлов коммутации — <b>20+ SKU</b>: собственная КД, доработка по первым рекламациям, выход в серию.</p>
+      </div>
+      <div class="case">
+        <div class="tag">Дозаказ · повторные партии</div>
+        <h3>Электронные замки</h3>
+        <p>Повторная закупка <b>5 млн ₽</b> для линейки производителя систем безопасности: стабильное качество партий и соблюдение сроков.</p>
       </div>
       <div class="case">
         <div class="tag">Business build · 11 лет</div>
-        <h3>Системы Безопасности и Автоматизации для зданий, ABB Россия</h3>
-        <p>Создано с нуля, международная команда экспертизы и продаж систем безопасности ABB в России: <b>500–900 млн ₽/год</b> смежного оборота, совместные разработки с R&amp;D Германии и Китая, 2 000+ сертифицированных интеграторов и монтажников.</p>
-      </div>
-      <div class="case">
-        <div class="tag">Флагманский объект · в срок</div>
-        <h3>Башня «Федерация», Банк ВТБ</h3>
-        <p>Крупнейший проект систем безопасности Bosch в Восточной Европе: полный цикл от требований и проектирования до монтажа, ПНР и сдачи — <b>в срок</b>. Архитектура PSIM на Bosch BIS с интеграцией 100% подсистем, локализация ПО с R&amp;D Bosch в Германии.</p>
+        <h3>Направление СБ зданий, ABB Россия</h3>
+        <p>Направление построено с нуля: <b>500–900 млн ₽/год</b> смежного оборота, 2 000+ обученных интеграторов, совместные разработки с R&amp;D Германии и Китая.</p>
       </div>
     </div>
   </div>
 </section>
 
-<section class="comp" id="skills">
+<section class="comp" id="method">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Компетенции</div>
-      <h2 class="sec">Что делаю руками и головой</h2>
+      <div class="sec-label">Методология</div>
+      <h2 class="sec">Пять шагов от идеи до партии</h2>
       <hr class="sec-rule">
     </div>
-    <div class="comp-grid">
-      <div class="comp-card">
-        <h3>Продукт и запуск</h3>
-        <ul>
-          <li>NPI 0→1: от бизнес-кейса до серии</li>
-          <li>Гейт-процессы и право «стоп»</li>
-          <li>ТЗ, техническая документация</li>
-          <li>Продуктовые дорожные карты</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Инженерия</h3>
-        <ul>
-          <li>Электроника: схемотехника, платы</li>
-          <li>Встроенное ПО, IoT-связность</li>
-          <li>ЕСКД и конструкторская документация</li>
-          <li>СБ: пожарная автоматика, СКУД, CCTV</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Производство и цепочка</h3>
-        <ul>
-          <li>Серийное производство, QA/QC</li>
-          <li>OEM/ODM в Китае, 30+ аудитов</li>
-          <li>Прямые контракты с заводами</li>
-          <li>Постановка на производство</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Сертификация</h3>
-        <ul>
-          <li>ТР ТС, ГОСТ, пожарные нормы</li>
-          <li>Испытания и приёмка</li>
-          <li>Федеральные объекты: допуск и режим</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Экономика продукта</h3>
-        <ul>
-          <li>Себестоимость и cost engineering</li>
-          <li>Ценообразование и маржа</li>
-          <li>Unit-экономика линейки</li>
-        </ul>
-      </div>
-      <div class="comp-card">
-        <h3>Команда</h3>
-        <ul>
-          <li>Найм и грейдирование инженеров</li>
-          <li>Наставничество, развитие людей</li>
-          <li>Кросс-функциональные команды до 35 чел.</li>
-        </ul>
-      </div>
+    <div class="step-grid">
+      <div class="step"><div class="n">1</div><h3>ТЗ и спецификация</h3><p>По голосовому брифу клиента — за 48 часов, на русском, английском и китайском.</p></div>
+      <div class="step"><div class="n">2</div><h3>Прайс-аудит фабрик</h3><p>3+ фабрики параллельно, реальная фабричная цена, сравнение в одной таблице.</p></div>
+      <div class="step"><div class="n">3</div><h3>Образцы и DFM</h3><p>Инженерная проверка образцов и технологичности — до оплаты партии.</p></div>
+      <div class="step"><div class="n">4</div><h3>Инспекция и приёмка</h3><p>AQL-выборка, фото- и видеоотчёт, мой стандарт приёмки на площадке.</p></div>
+      <div class="step"><div class="n">5</div><h3>Логистика и сертификация</h3><p>Белый импорт, ТР ТС, коды «Честного знака» — товар сразу в легальный оборот.</p></div>
     </div>
   </div>
 </section>
 
-<section class="edu" id="edu">
+<section class="about" id="about">
   <div class="wrap">
     <div class="sec-head">
-      <div class="sec-label">Образование · Сертификации · Награды</div>
-      <h2 class="sec">Формальная база</h2>
+      <div class="sec-label">Обо мне</div>
+      <h2 class="sec">Инженер, а не посредник</h2>
       <hr class="sec-rule">
     </div>
-    <div class="edu-grid">
-      <div class="edu-card">
-        <div class="y">2000</div>
-        <h3>Владимирский государственный университет</h3>
-        <p>Инженер — радиотехника / системотехника</p>
-      </div>
-      <div class="edu-card">
-        <div class="y">2006</div>
-        <h3>Honeywell Superstars Award</h3>
-        <p>Корпоративная награда за выдающиеся результаты</p>
-      </div>
-      <div class="edu-card">
-        <div class="y">2010</div>
-        <h3>Bosch Academy, Франкфурт-на-Майне</h3>
-        <p>Building Integration System — архитектура и интеграция</p>
-      </div>
-      <div class="edu-card">
-        <div class="y">2023</div>
-        <h3>«Основы ИИ для бизнеса» · Content AI</h3>
-        <p>Product Strategy &amp; Vision — продуктовая стратегия</p>
-      </div>
+    <p>Я не карго-агент и не «агент по выкупу». Я инженер с 25-летним стажем: 11 лет строил направление систем безопасности ABB в России, затем вывел в серию <b>4 линейки электроники</b> для производителя систем безопасности федерального масштаба — со схемотехникой, сертификацией и фабриками Китая по личным аудитам.</p>
+    <p>Мой интерес совпадает с вашим: экономия подтверждается цифрами в отчёте, качество — приёмкой на площадке. Поэтому и предлагаю модель <b>«оплата от результата»</b>: если экономии нет — вы не платите процент.</p>
+    <div class="cta" style="margin-top:22px">
+      <a class="btn gold" href="cv/">Полное резюме — 25 лет, 8 позиций</a>
     </div>
   </div>
 </section>
@@ -415,12 +334,12 @@
       <hr class="sec-rule" style="background:#FFFFFF">
     </div>
     <div class="contact-grid">
+      <a class="contact-card" href="https://t.me/andrey_shalnov" target="_blank" rel="noopener"><div class="t">Telegram</div><div class="v">@andrey_shalnov</div></a>
+      <a class="contact-card" href="https://wa.me/79165948682" target="_blank" rel="noopener"><div class="t">WhatsApp</div><div class="v">+7 (916) 594-86-82</div></a>
       <a class="contact-card" href="mailto:andrey.shalnov@gmail.com"><div class="t">Почта</div><div class="v">andrey.shalnov@gmail.com</div></a>
       <a class="contact-card" href="tel:+79165948682"><div class="t">Телефон</div><div class="v">+7 (916) 594-86-82</div></a>
-      <a class="contact-card" href="https://www.linkedin.com/in/andrey-shalnov/" target="_blank" rel="noopener"><div class="t">LinkedIn</div><div class="v">in/andrey-shalnov</div></a>
-      <a class="contact-card" href="https://github.com/andreyshalnov" target="_blank" rel="noopener"><div class="t">GitHub</div><div class="v">github.com/andreyshalnov</div></a>
     </div>
-    <p class="geo-note">Москва · релокация, командировки по РФ и за рубеж · английский — рабочий уровень (переговоры и аудиты заводов в КНР)</p>
+    <p class="geo-note">Отвечаю в течение 24 часов · Москва, MSK (UTC+3) · командировки в Китай · запросы — русский, английский, 中文</p>
   </div>
 </section>
 </div>
@@ -428,26 +347,29 @@
 <footer>
   <div class="wrap">
     <div>© 2026 Андрей Шальнов</div>
-    <div>Электроника: 0→1 до серийного производства</div>
+    <div>Инженерные закупки и запуск электроники · Китай — Россия</div>
   </div>
 </footer>
 
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
-  "@type": "Person",
-  "name": "Андрей Шальнов",
-  "alternateName": "Andrey Shalnov",
-  "jobTitle": "Product & Engineering Director",
-  "email": "mailto:andrey.shalnov@gmail.com",
-  "telephone": "+7 916 594 86 82",
+  "@type": "ProfessionalService",
+  "name": "Андрей Шальнов — инженерные закупки и запуск электроники (Китай — Россия)",
+  "description": "Аудит закупок и прайсов фабрик Китая, инспекции и приёмка на площадке, запуск электронных изделий 0→серия, сертификация ТР ТС, маркировка «Честный знак». Оплата возможна процентом от сэкономленного.",
   "url": "https://andreyshalnov.github.io/iam/",
-  "sameAs": ["https://github.com/andreyshalnov", "https://www.linkedin.com/in/andrey-shalnov/"],
-  "address": {"@type": "PostalAddress", "addressLocality": "Москва", "addressCountry": "RU"},
-  "alumniOf": ["Владимирский государственный университет", "Honeywell", "Bosch", "ABB"],
-  "knowsLanguage": ["ru", "en"],
-  "description": "Руководитель продукта и разработки в электронике. 25+ лет: запуск изделий 0→1 до серийного производства, сертификация ТР ТС/ГОСТ, OEM/ODM в Китае."
+  "areaServed": ["RU", "EAEU", "CN"],
+  "provider": {
+    "@type": "Person",
+    "name": "Андрей Шальнов",
+    "alternateName": "Andrey Shalnov",
+    "email": "mailto:andrey.shalnov@gmail.com",
+    "telephone": "+7 916 594 86 82",
+    "address": {"@type": "PostalAddress", "addressLocality": "Москва", "addressCountry": "RU"},
+    "knowsLanguage": ["ru", "en"]
+  }
 }
 </script>
+
 </body>
 </html>
