@@ -6,74 +6,205 @@
 <title>Андрей Шальнов — Директор по продуктам (CPO)</title>
 <meta name="description" content="Андрей Шальнов — директор по продуктам (CPO): портфель 8 линеек, 2 300+ SKU, оборот свыше 1 млрд ₽/год, экономика изделия, канал дистрибуции с нуля.">
 <style>
-:root{--bg:#F4F6F9;--ink:#12253C;--accent:#D9480F;--muted:#5A6B80;--line:#E2E8F0;--card:#FFFFFF}
+:root{
+  --blue:#4A7AA8; --blue-deep:#2C4A6B; --blue-ink:#004B7A; --blue-soft:#538CD6; --blue-link:#436590;
+  --orange:#FF9900; --orange-soft:#FFC77E;
+  --ink:#1A1A1A; --muted:#666666; --line:#D8DEE4; --tint:#F4F6F8;
+  --sans: Arial, "Helvetica Neue", Helvetica, "PT Sans", sans-serif;
+}
 *{box-sizing:border-box}
-body{font-family:'Inter','Manrope',-apple-system,'Segoe UI',Roboto,Arial,sans-serif;color:var(--ink);background:var(--bg);margin:0;line-height:1.55}
-.wrap{max-width:840px;margin:0 auto;padding:26px 20px 60px}
-.topbar{display:flex;justify-content:space-between;align-items:center;gap:12px;font-size:12px;color:var(--muted);letter-spacing:.05em;text-transform:uppercase;flex-wrap:wrap}
-.chip{background:var(--accent);color:#fff;padding:4px 12px;border-radius:999px;font-weight:600;letter-spacing:.07em}
-.topbar a{color:var(--muted);text-decoration:underline;white-space:nowrap}
-h1{font-size:34px;margin:20px 0 2px;letter-spacing:-.02em}
-.role-h{font-size:20px;color:var(--accent);font-weight:700;margin:0 0 10px}
-.tagline{font-size:16.5px;color:#2A3D55;max-width:66ch;margin:0}
-.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(170px,1fr));gap:10px;margin:24px 0 4px}
-.stat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px 14px}
-.stat b{display:block;font-size:21px;letter-spacing:-.01em}
-.stat span{font-size:12.5px;color:var(--muted);display:block;margin-top:2px;line-height:1.35}
-h2{font-size:13px;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:34px 0 12px;border-bottom:1px solid var(--line);padding-bottom:7px}
-ul.why{margin:0;padding:0 0 0 20px}
-ul.why li{margin-bottom:9px}
-ul.k{list-style:none;padding:0;margin:0;counter-reset:k}
-ul.k li{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:11px 14px 11px 46px;margin-bottom:8px;position:relative;counter-increment:k}
-ul.k li:before{content:counter(k,decimal-leading-zero);position:absolute;left:14px;top:11px;font-weight:700;color:var(--accent);font-size:13px}
-.chips{display:flex;flex-wrap:wrap;gap:8px}
-.chip2{background:#fff;border:1px solid var(--line);border-radius:999px;padding:5px 12px;font-size:13px;color:#2A3D55}
-ul.xp{border-left:2px solid var(--line);padding-left:16px;margin:0;list-style:none}
-ul.xp li{margin-bottom:12px}
-ul.xp .y{font-size:12px;color:var(--muted);letter-spacing:.04em;text-transform:uppercase}
-ul.xp b{display:block}
-ul.xp p{margin:2px 0 0;font-size:14px;color:#2A3D55}
-.btn{background:var(--ink);color:#fff;border:none;border-radius:10px;padding:12px 18px;font-size:15px;font-weight:600;cursor:pointer}
-.btn:hover{background:var(--accent)}
-.hhtext{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;margin-top:10px;white-space:pre-wrap;font-family:'JetBrains Mono',ui-monospace,Consolas,monospace;font-size:12.5px;color:#2A3D55;max-height:340px;overflow:auto}
-.note{font-size:12.5px;color:var(--muted);margin-top:8px}
-footer{margin-top:44px;border-top:1px solid var(--line);padding-top:16px;font-size:13.5px;color:var(--muted)}
-footer a{color:var(--accent);text-decoration:none}
-.c{display:flex;flex-wrap:wrap;gap:14px;margin:8px 0 0;padding:0;list-style:none}
-.c a{color:var(--ink);font-weight:600;text-decoration:none;border-bottom:1px solid var(--line)}
-.edu{margin-top:12px;font-size:12.5px}
-@media print{.topbar,.btn,.note{display:none}body{background:#fff}}
+html{scroll-behavior:smooth}
+body{font-family:var(--sans);color:#2B2B2B;font-size:15.5px;line-height:1.6;-webkit-font-smoothing:antialiased;margin:0;background:#4A7AA8 url("../assets/sky.jpg") no-repeat fixed top center}
+.wrap{max-width:1000px;margin:0 auto;padding:0 46px}
+a{color:var(--blue-link);text-decoration:none}
+a:hover{text-decoration:underline}
+.topbar{position:sticky;top:0;z-index:50;background:#fff;border-bottom:2px solid #1A1A1A}
+.topbar .wrap{display:flex;align-items:center;justify-content:space-between;height:54px}
+.brand{color:#111;font-size:16px;font-weight:bold;letter-spacing:.4px}
+.nav a{color:#1A1A1A;font-size:13px;letter-spacing:.6px;font-weight:bold;margin-left:18px}
+.nav a:hover{color:var(--blue-ink);text-decoration:none}
+.sheet{max-width:1000px;margin:34px auto 0;background:#fff;box-shadow:0 12px 38px rgba(0,22,44,.35);position:relative}
+.sheet::before{content:"";position:absolute;top:-4px;left:0;right:0;height:4px;background:url(data:image/png;base64,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) repeat-x top center}
+.hero{padding:54px 0 42px;border-bottom:1px solid var(--line)}
+.hero .eyebrow{font-size:12.5px;letter-spacing:3px;text-transform:uppercase;color:var(--blue);font-weight:bold;margin-bottom:16px}
+.hero h1{font-size:46px;line-height:1.1;font-weight:bold;color:#111;margin:0 0 16px}
+.hero .lead{font-size:18.5px;line-height:1.55;color:#333;max-width:760px;margin:0 0 14px}
+.hero .geo{font-size:14px;color:#7A8CA0;margin:0 0 30px}
+.cta{display:flex;flex-wrap:wrap;gap:10px}
+.btn{display:inline-block;padding:10px 20px;border:1px solid #9AA5AE;border-radius:3px;color:#1A1A1A;font-size:14px;letter-spacing:.3px;background:#fff;transition:all .18s ease;cursor:pointer;font-family:inherit}
+.btn:hover{background:var(--blue-ink);border-color:var(--blue-ink);color:#fff;text-decoration:none}
+.btn.gold{background:#1A1A1A;border-color:#1A1A1A;color:#fff;font-weight:bold}
+.btn.gold:hover{background:var(--blue-ink);border-color:var(--blue-ink)}
+.metrics{background:var(--tint);border-bottom:1px solid var(--line)}
+.metrics .grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.metric{padding:26px 12px;text-align:center;border-left:1px solid var(--line)}
+.metric:first-child{border-left:none}
+.metric .num{font-size:28px;font-weight:bold;color:#111}
+.metric .num em{font-style:normal;color:var(--blue)}
+.metric .lbl{font-size:12px;color:var(--muted);margin-top:6px;line-height:1.35}
+section{padding:56px 0}
+.sec-label{font-size:12px;letter-spacing:2.6px;text-transform:uppercase;color:var(--blue-soft);font-weight:bold;margin-bottom:10px}
+h2.sec{font-size:26px;font-weight:bold;color:#111;letter-spacing:.2px;margin:0}
+.sec-head{margin-bottom:32px}
+.sec-rule{width:56px;height:2px;background:#1A1A1A;border:0;margin:16px 0 0}
+.about p{font-size:16px;line-height:1.75;color:#3B4754;max-width:860px;margin:0 0 17px}
+.about p b{color:#111}
+.card{background:#fff;border:1px solid var(--line);border-radius:3px;padding:10px 24px}
+.card ul{list-style:none;margin:10px 0;padding:0}
+.card li{font-size:15px;line-height:1.65;color:#3B4754;padding:7px 0 7px 18px;position:relative}
+.card li::before{content:"—";position:absolute;left:0;color:var(--blue)}
+.card li b{color:#111}
+.cols2 ul{column-count:2;column-gap:44px}
+.tl{list-style:none;max-width:880px;margin:0;padding:0}
+.tl li{position:relative;padding:0 0 32px 32px;border-left:2px solid #C2D2E2}
+.tl li:last-child{padding-bottom:4px}
+.tl li::before{content:"";position:absolute;left:-7px;top:6px;width:12px;height:12px;border-radius:50%;background:var(--blue);border:2px solid #fff;box-shadow:0 0 0 2px #C2D2E2}
+.tl .period{font-size:12.5px;letter-spacing:1.2px;text-transform:uppercase;color:var(--blue-soft);font-weight:bold}
+.tl h3{font-size:19px;color:#111;margin:4px 0 1px;font-weight:bold}
+.tl .role{font-size:14px;color:var(--muted);margin-bottom:8px}
+.tl .desc{font-size:15px;line-height:1.65;color:#3B4754}
+.exp{background:var(--tint)}
+.hhtext{background:var(--tint);border:1px solid var(--line);border-radius:3px;padding:14px 16px;margin-top:18px;white-space:pre-wrap;font-family:ui-monospace,Consolas,'Courier New',monospace;font-size:12.5px;color:#3B4754;max-height:320px;overflow:auto}
+.note{font-size:13.5px;color:var(--muted);margin:12px 0 0}
+.contacts{background:linear-gradient(160deg,#5687B4 0%,#4A7AA8 55%,#3E6C98 100%);color:#fff}
+.contacts .sec-label{color:#C7D6E5}
+.contacts h2.sec{color:#fff}
+.contacts .sec-rule{background:#fff}
+.contact-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
+.contact-card{display:block;border:1px solid rgba(255,255,255,.35);border-radius:3px;padding:18px 20px;color:#fff;transition:all .18s ease;background:rgba(255,255,255,.07)}
+.contact-card:hover{background:rgba(255,255,255,.14);text-decoration:none}
+.contact-card .t{font-size:11px;letter-spacing:1.8px;text-transform:uppercase;color:#C7D6E5;margin-bottom:6px}
+.contact-card .v{font-size:14.5px;font-weight:bold;color:#fff;word-break:break-all}
+.foot{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;border-top:1px solid rgba(255,255,255,.25);margin-top:26px;padding-top:16px;font-size:13px;color:#C7D6E5}
+@media(max-width:920px){
+  .metrics .grid{grid-template-columns:repeat(2,1fr)}
+  .metric{border-top:1px solid var(--line)}
+  .cols2 ul{column-count:1}
+  .hero h1{font-size:36px}
+  .wrap{padding:0 28px}
+  .contact-grid{grid-template-columns:repeat(2,1fr)}
+}
+@media(max-width:640px){
+  .hero{padding:38px 0 32px}
+  .hero h1{font-size:30px}
+  .contact-grid{grid-template-columns:1fr}
+  .tl li{padding-left:22px}
+  .sheet{margin:14px 10px 0}
+  .wrap{padding:0 20px}
+  .nav a{margin-left:12px}
+}
+@media print{
+  .topbar,.cta,.btn{display:none}
+  body{background:#fff;background-image:none}
+  .sheet{box-shadow:none;margin:0;max-width:none}
+  .sheet::before{display:none}
+  section{padding:22px 0}
+  .hhtext{display:none}
+  .contacts{background:#fff;color:#111}
+  .contacts .sec-label{color:var(--blue-ink)}
+  .contacts h2.sec{color:#111}
+  .contacts .sec-rule{background:#1A1A1A}
+  .contact-card{border-color:#9AA5AE;color:#111;background:#fff}
+  .contact-card .t{color:#666}
+  .contact-card .v{color:#111}
+  .foot{color:#666;border-top-color:#D8DEE4}
+}
 </style>
 </head>
 <body>
-<div class="wrap">
-  <div class="topbar">
-    <span class="chip">CPO</span>
+<div class="topbar"><div class="wrap">
+  <span class="brand">Андрей Шальнов</span>
+  <nav class="nav"><a href="mailto:andrey.shalnov@gmail.com">Почта</a><a href="tel:+79165948682">+7 (916) 594-86-82</a></nav>
+</div></div>
+
+<div class="sheet">
+  <div class="wrap">
+    <div class="hero">
+      <div class="eyebrow">Директор по продуктам (CPO)</div>
+      <h1>Андрей Шальнов</h1>
+      <p class="lead">Продуктовый портфель с ответственностью за оборот и маржу: 8 линеек, 2 300+ SKU, свыше 1 млрд ₽ в год. Канал дистрибуции построен с нуля. Инженерия + экономика продукта в одной связке.</p>
+      <p class="geo">Москва · релокация, командировки по РФ и за рубеж · английский — рабочий уровень</p>
+      <div class="cta">
+        <button class="btn gold" id="copyBtn" type="button">Скопировать текст для hh.ru</button>
+        <button class="btn" type="button" onclick="window.print()">Версия для печати · PDF</button>
+      </div>
+    </div>
   </div>
 
-  <h1>Андрей Шальнов</h1>
-  <p class="role-h">Директор по продуктам (CPO)</p>
-  <p class="tagline">Продуктовый портфель с ответственностью за оборот и маржу: 8 линеек, 2 300+ SKU, свыше 1 млрд ₽ в год. Канал дистрибуции построен с нуля. Инженерия + экономика продукта в одной связке.</p>
+  <div class="metrics"><div class="wrap"><div class="grid">
+<div class="metric"><div class="num">1<em>млрд ₽</em></div><div class="lbl">оборот портфеля в год</div></div>
+<div class="metric"><div class="num">8</div><div class="lbl">линеек в портфеле</div></div>
+<div class="metric"><div class="num">2 300<em>+</em></div><div class="lbl">SKU</div></div>
+<div class="metric"><div class="num">50<em>%</em></div><div class="lbl">продаж через дистрибуцию</div></div>
+  </div></div></div>
 
-  <div class="stats"><div class="stat"><b>1 млрд ₽</b><span>оборот портфеля в год</span></div><div class="stat"><b>8</b><span>линеек в портфеле</span></div><div class="stat"><b>2 300+</b><span>SKU</span></div><div class="stat"><b>50%</b><span>продаж через дистрибуцию</span></div></div>
+  <div class="wrap">
+    <section>
+      <div class="sec-head"><div class="sec-label">Профиль</div><h2 class="sec">Почему я под эту роль</h2><hr class="sec-rule"></div>
+      <div class="about">
+<p>Портфель 8 собственных линеек (2 300+ SKU), оборот свыше 1 млрд ₽/год; 4 линейки 0→серия — все в топе группы по валовой прибыли.</p>
+<p>Канал дистрибуции построен с нуля: до 50% продаж направления через дистрибуторов.</p>
+<p>Экономика продукта как часть инженерии: себестоимость, ценообразование, маржа, unit-экономика линейки.</p>
+<p>Путь от инжиниринга к продукту: ABB — 11 лет во главе направления (500–900 млн ₽/год), Bosch — управление портфелем систем безопасности в России.</p>
+      </div>
+    </section>
 
-  <h2>Почему под эту роль</h2>
-  <ul class="why"><li>Портфель 8 собственных линеек (2 300+ SKU), оборот свыше 1 млрд ₽/год; 4 линейки 0→серия — все в топе группы по валовой прибыли.</li><li>Канал дистрибуции построен с нуля: до 50% продаж направления через дистрибуторов.</li><li>Экономика продукта как часть инженерии: себестоимость, ценообразование, маржа, unit-экономика линейки.</li><li>Путь от инжиниринга к продукту: ABB — 11 лет во главе направления (500–900 млн ₽/год), Bosch — управление портфелем систем безопасности в России.</li></ul>
+    <section>
+      <div class="sec-head"><div class="sec-label">Результаты</div><h2 class="sec">Ключевые результаты</h2><hr class="sec-rule"></div>
+      <div class="card">
+        <ul>
+<li>Портфель из 8 собственных линеек (2 300+ SKU), оборот свыше 1 млрд ₽ в год.</li>
+<li>4 линейки выведены 0→серия с 2022 года — все в топе группы по валовой прибыли.</li>
+<li>Канал дистрибуции построен с нуля: до 50% продаж через дистрибуторов в 2026 году.</li>
+<li>ABB: направление «Системы безопасности зданий» построено с нуля и вёл 11 лет — 500–900 млн ₽/год; ценообразование, себестоимость и маржа направления; бизнес-кейсы флагманских проектов (ЗИЛАРТ).</li>
+<li>Обучил и сертифицировал 2 000+ интеграторов; автор отраслевого блога о домофонных системах — постоянная обратная связь от рынка.</li>
+<li>Bosch: управление портфелем систем безопасности в России — локализация, ценообразование, техническая экспертиза.</li>
+        </ul>
+      </div>
+    </section>
 
-  <h2>Ключевые результаты</h2>
-  <ul class="k"><li>Портфель из 8 собственных линеек (2 300+ SKU), оборот свыше 1 млрд ₽ в год.</li><li>4 линейки выведены 0→серия с 2022 года — все в топе группы по валовой прибыли.</li><li>Канал дистрибуции построен с нуля: до 50% продаж через дистрибуторов в 2026 году.</li><li>ABB: направление «Системы безопасности зданий» построено с нуля и вёл 11 лет — 500–900 млн ₽/год; ценообразование, себестоимость и маржа направления; бизнес-кейсы флагманских проектов (ЗИЛАРТ).</li><li>Обучил и сертифицировал 2 000+ интеграторов; автор отраслевого блога о домофонных системах — постоянная обратная связь от рынка.</li><li>Bosch: управление портфелем систем безопасности в России — локализация, ценообразование, техническая экспертиза.</li></ul>
+    <section>
+      <div class="sec-head"><div class="sec-label">Инструменты и практики</div><h2 class="sec">Компетенции</h2><hr class="sec-rule"></div>
+      <div class="card cols2">
+        <ul>
+<li>Продуктовая стратегия</li>
+<li>Портфель и P&amp;L</li>
+<li>Ценообразование и маржа</li>
+<li>Unit-экономика линейки</li>
+<li>Каналы и дистрибуция</li>
+<li>GTM</li>
+<li>Системные интеграторы</li>
+<li>Voice of customer</li>
+<li>Cost engineering</li>
+<li>Локализация продуктов</li>
+        </ul>
+      </div>
+    </section>
+  </div>
 
-  <h2>Компетенции</h2>
-  <div class="chips"><span class="chip2">Продуктовая стратегия</span><span class="chip2">Портфель и P&amp;L</span><span class="chip2">Ценообразование и маржа</span><span class="chip2">Unit-экономика линейки</span><span class="chip2">Каналы и дистрибуция</span><span class="chip2">GTM</span><span class="chip2">Системные интеграторы</span><span class="chip2">Voice of customer</span><span class="chip2">Cost engineering</span><span class="chip2">Локализация продуктов</span></div>
+  <section class="exp">
+    <div class="wrap">
+      <div class="sec-head"><div class="sec-label">Опыт</div><h2 class="sec">25 лет в индустрии</h2><hr class="sec-rule"></div>
+      <ul class="tl">
+<li><span class="period">Декабрь 2022 — н. в.</span><h3>ГК «Рубеж» (ООО «Технолайт»), Москва</h3><div class="role">Руководитель отдела СТМ / ведущий руководитель направлений</div><p class="desc">Портфель 8 собственных линеек: 2 300+ SKU, оборот свыше 1 млрд ₽/год; 4 линейки 0→серия.</p></li>
+<li><span class="period">2011 — 2022</span><h3>ABB, Москва</h3><div class="role">Руководитель направления «Системы безопасности зданий»</div><p class="desc">Направление построено с нуля и вёл 11 лет: 500–900 млн ₽/год, совместные разработки с R&amp;D Германии и Китая, 2 000+ сертифицированных интеграторов.</p></li>
+<li><span class="period">2009 — 2011</span><h3>Присско, Москва</h3><div class="role">Ведущий инженер проекта / руководитель отдела</div><p class="desc">Крупнейший проект систем безопасности Bosch в Восточной Европе — башня «Федерация» (Банк ВТБ), сдан в срок; архитектура PSIM (Bosch BIS).</p></li>
+<li><span class="period">2008 — 2009</span><h3>Bosch, Москва</h3><div class="role">Менеджер продукта, подразделение систем безопасности</div><p class="desc">Портфель систем безопасности Bosch в России: локализация, ценообразование.</p></li>
+<li><span class="period">2005 — 2008</span><h3>Honeywell, Москва</h3><div class="role">Руководитель проектов / руководитель группы</div><p class="desc">Первый в России «умный» жилой дом (ЖК «Коперник»); награда Honeywell Superstars (2006).</p></li>
+<li><span class="period">2004 — 2005</span><h3>Аларм Телеком, Москва</h3><div class="role">Инженер систем безопасности</div><p class="desc">Проектирование и пусконаладка; ключевой объект — МХАТ им. А. П. Чехова.</p></li>
+<li><span class="period">2001 — 2004</span><h3>АСПТ «Спецавтоматика», Москва</h3><div class="role">Заместитель руководителя R&amp;D-отдела</div><p class="desc">Линейка оборудования пожарной автоматики: до нового прибора в месяц; объекты федерального уровня — Московский Кремль, Центральный банк РФ.</p></li>
+<li><span class="period">1999 — 2000</span><h3>Концерн «Алмаз-Антей», Муром</h3><div class="role">Инженер-электроник</div><p class="desc">ПО радиолокационных систем (C++, Assembler, ПЛИС): прототип цифрового фильтра прошёл госиспытания.</p></li>
+      </ul>
+    </div>
+  </section>
 
-  <h2>Опыт — 25 лет в индустрии</h2>
-  <ul class="xp"><li><span class="y">Декабрь 2022 — н. в.</span><b>ГК «Рубеж» (ООО «Технолайт»), Москва — Руководитель отдела СТМ / ведущий руководитель направлений</b><p>Портфель 8 собственных линеек: 2 300+ SKU, оборот свыше 1 млрд ₽/год; 4 линейки 0→серия.</p></li><li><span class="y">2011 — 2022</span><b>ABB, Москва — Руководитель направления «Системы безопасности зданий»</b><p>Направление построено с нуля и вёл 11 лет: 500–900 млн ₽/год, совместные разработки с R&amp;D Германии и Китая, 2 000+ сертифицированных интеграторов.</p></li><li><span class="y">2009 — 2011</span><b>Присско, Москва — Ведущий инженер проекта / руководитель отдела</b><p>Крупнейший проект систем безопасности Bosch в Восточной Европе — башня «Федерация» (Банк ВТБ), сдан в срок; архитектура PSIM (Bosch BIS).</p></li><li><span class="y">2008 — 2009</span><b>Bosch, Москва — Менеджер продукта, подразделение систем безопасности</b><p>Портфель систем безопасности Bosch в России: локализация, ценообразование.</p></li><li><span class="y">2005 — 2008</span><b>Honeywell, Москва — Руководитель проектов / руководитель группы</b><p>Первый в России «умный» жилой дом (ЖК «Коперник»); награда Honeywell Superstars (2006).</p></li><li><span class="y">2004 — 2005</span><b>Аларм Телеком, Москва — Инженер систем безопасности</b><p>Проектирование и пусконаладка; ключевой объект — МХАТ им. А. П. Чехова.</p></li><li><span class="y">2001 — 2004</span><b>АСПТ «Спецавтоматика», Москва — Заместитель руководителя R&amp;D-отдела</b><p>Линейка оборудования пожарной автоматики: до нового прибора в месяц; объекты федерального уровня — Московский Кремль, Центральный банк РФ.</p></li><li><span class="y">1999 — 2000</span><b>Концерн «Алмаз-Антей», Муром — Инженер-электроник</b><p>ПО радиолокационных систем (C++, Assembler, ПЛИС): прототип цифрового фильтра прошёл госиспытания.</p></li></ul>
-
-  <h2>Текст для hh.ru — в один клик</h2>
-  <button class="btn" id="copyBtn" type="button">Скопировать текст для hh.ru</button>
-  <pre class="hhtext" id="hhView"></pre>
-  <p class="note">Кнопка копирует готовый текст (позиционирование + описание опыта в ГК «Рубеж») — вставьте его в поле «О себе» или в описание места работы на hh.ru. Ссылка на эту страницу уже включена в конец текста. Для печати: Ctrl/Cmd+P.</p>
-  <script type="text/plain" id="hh-text">Директор по продуктам (CPO) — продуктовый портфель с ответственностью за оборот и маржу.
+  <div class="wrap">
+    <section>
+      <div class="sec-head"><div class="sec-label">Для отклика</div><h2 class="sec">Текст для hh.ru — в один клик</h2><hr class="sec-rule"></div>
+      <div class="about"><p>Кнопка в шапке копирует готовый текст: позиционирование и описание опыта в ГК «Рубеж», уже адаптированные под эту роль. Вставьте его в поле «О себе» или в описание места работы на hh.ru — ссылка на эту страницу уже включена в конец текста.</p></div>
+      <pre class="hhtext" id="hhView"></pre>
+      <p class="note">Текст хранится прямо на странице; для PDF используйте «Версию для печати» (Ctrl/Cmd+P).</p>
+      <script type="text/plain" id="hh-text">Директор по продуктам (CPO) — продуктовый портфель с ответственностью за оборот и маржу.
 
 25+ лет в электронике и системах безопасности: ABB (11 лет во главе направления, 500–900 млн ₽/год), Bosch, Honeywell. Сейчас ГК «Рубеж»: портфель 8 собственных линеек (2 300+ SKU), оборот свыше 1 млрд ₽ в год, канал дистрибуции построен с нуля.
 
@@ -86,13 +217,21 @@ footer a{color:var(--accent);text-decoration:none}
 - Обучил и сертифицировал 2 000+ интеграторов; автор отраслевого блога — прямой канал обратной связи с рынком.
 - Ранее: ABB — 11 лет во главе направления систем безопасности зданий (500–900 млн ₽/год, бизнес-кейсы флагманских проектов), Bosch — портфель систем безопасности в России.
 Подробные кейсы под эту роль: https://andreyshalnov.github.io/iam/cv/cpo/</script>
+    </section>
+  </div>
 
-  <footer>
-    <ul class="c"><li>Почта: <a href="mailto:andrey.shalnov@gmail.com">andrey.shalnov@gmail.com</a></li><li>Телефон: <a href="tel:+79165948682">+7 (916) 594-86-82</a></li><li>LinkedIn: <a href="https://www.linkedin.com/in/andrey-shalnov/">in/andrey-shalnov</a></li><li>GitHub: <a href="https://github.com/andreyshalnov">github.com/andreyshalnov</a></li></ul>
-    <p>Москва · релокация, командировки по РФ и за рубеж · английский — рабочий уровень</p>
-    <p class="edu">Владимирский государственный университет (2000) — радиотехника / системотехника · Bosch Academy, Франкфурт (2010) · Награда Honeywell Superstars (2006)</p>
-    <p>© 2026 Андрей Шальнов · обновлено: ноябрь 2026</p>
-  </footer>
+  <div class="contacts">
+    <div class="wrap">
+      <div class="sec-head"><div class="sec-label">Контакты</div><h2 class="sec">Связаться</h2><hr class="sec-rule"></div>
+      <div class="contact-grid">
+<a class="contact-card" href="mailto:andrey.shalnov@gmail.com"><div class="t">Почта</div><div class="v">andrey.shalnov@gmail.com</div></a>
+<a class="contact-card" href="tel:+79165948682"><div class="t">Телефон</div><div class="v">+7 (916) 594-86-82</div></a>
+<a class="contact-card" href="https://www.linkedin.com/in/andrey-shalnov/"><div class="t">LinkedIn</div><div class="v">in/andrey-shalnov</div></a>
+<a class="contact-card" href="https://github.com/andreyshalnov"><div class="t">GitHub</div><div class="v">github.com/andreyshalnov</div></a>
+      </div>
+      <div class="foot"><span>© 2026 Андрей Шальнов</span><span>обновлено: ноябрь 2026</span></div>
+    </div>
+  </div>
 </div>
 <script>
 (function(){
@@ -102,7 +241,7 @@ footer a{color:var(--accent);text-decoration:none}
   btn.addEventListener('click',function(){
     var done=function(ok){
       var old='Скопировать текст для hh.ru';
-      btn.textContent=ok?'Скопировано ✓ — вставляйте в hh.ru':'Не удалось — скопируйте текст из блока ниже';
+      btn.textContent=ok?'Скопировано ✓ — вставляйте в hh.ru':'Не удалось — текст в блоке ниже';
       setTimeout(function(){btn.textContent=old;},2500);
     };
     if(navigator.clipboard&&navigator.clipboard.writeText){
